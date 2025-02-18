@@ -3,18 +3,22 @@ import SearchIcon from '@/assets/icons/SearchIcon.vue'
 import UkazIcon from '@/assets/icons/UkazIcon.vue'
 import MapIcon from '@/assets/icons/MapIcon.vue'
 import ArrowIcon from '@/assets/icons/ArrowIcon.vue';
+
+const toggleMenu = (event) => {
+  document.querySelector("#header").classList.remove('hidden')
+}
 </script>
 
 <template>
   <main>
     <div class="hero-bg">
       <div class="flex px-[40px] pt-[36px] justify-between items-center sticky top-0 left-0 z-50">
-        <div>
+        <button class="border-0" @click="toggleMenu">
           <img src="/images/menu-button.png" />
           <span class="text-white text-semibold text-[12.5px] main-font letter-spacing-[.5em]"
             >МЕНЮ</span
           >
-        </div>
+        </button>
 
         <div>
           <SearchIcon className="text-white" />
