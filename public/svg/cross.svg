@@ -1,0 +1,29 @@
+ <svg
+    :class="className"
+    width="28"
+    height="24"
+    viewBox="0 0 28 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <mask id="youtube-mask">
+      <!-- Фон с закругленными углами -->
+      <rect width="28" height="24" rx="6" fill="white" />
+      
+      <!-- Сам логотип YouTube, вырезанный из фона -->
+      <path
+        d="M22 7.5c-.2-.8-.7-1.2-1.4-1.4C19.5 6 14 6 14 6s-5.5 0-6.6.3c-.8.2-1.3.6-1.4 1.4C5.5 9 5.5 12 5.5 12s0 3 .5 4.5c.2.8.6 1.3 1.4 1.4C8.5 18 14 18 14 18s5.5 0 6.6-.3c.8-.2 1.3-.6 1.4-1.4.5-1.5.5-4.5.5-4.5s0-3-.5-4.5z"
+        fill="black"
+        transform="translate(0 2)"
+      />
+      
+      <!-- Кнопка Play по центру -->
+      <path
+        d="M12 9.5l5 2.5-5 2.5V9.5z"
+        fill="black"
+      />
+    </mask>
+    
+    <!-- Белый фон, который обрезается по маске -->
+    <rect width="28" height="24" rx="6" fill="white" mask="url(#youtube-mask)" />
+  </svg>
