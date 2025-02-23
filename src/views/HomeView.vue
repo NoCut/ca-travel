@@ -2,10 +2,10 @@
 import SearchIcon from '@/assets/icons/SearchIcon.vue'
 import UkazIcon from '@/assets/icons/UkazIcon.vue'
 import MapIcon from '@/assets/icons/MapIcon.vue'
-import ArrowIcon from '@/assets/icons/ArrowIcon.vue';
+import ArrowIcon from '@/assets/icons/ArrowIcon.vue'
 
 const toggleMenu = (event) => {
-  document.querySelector("#header").classList.remove('hidden')
+  document.querySelector('#header').classList.remove('hidden')
 }
 </script>
 
@@ -111,56 +111,100 @@ const toggleMenu = (event) => {
         <div class="flex flex-col">
           <div class="relative">
             <img src="/images/main-page/5stans.jpg" />
-            <div class="absolute bottom-0 right-0 bg-[#d35400] text-white p-[10px] maint-font text-[16px]">2250 USD</div>
+            <div
+              class="absolute bottom-0 right-0 bg-[#d35400] text-white p-[10px] maint-font text-[16px]"
+            >
+              2250 USD
+            </div>
           </div>
 
           <div class="mt-[30px] flex-1">
-            <h3 class="text-[20px] letter-spacing-[.05em] text-[#444444] main-font font-semibold">Путешествие по Центральной Азии</h3>
-            <p class="text-[16px] letter-spacing-[.05em] text-[#444444] main-font font-[350] mt-[16px]">Тур включает посещение основных туристических достопримечательностей и интересных мест в каждой стране</p>
+            <h3 class="text-[20px] letter-spacing-[.05em] text-[#444444] main-font font-semibold">
+              Путешествие по Центральной Азии
+            </h3>
+            <p
+              class="text-[16px] letter-spacing-[.05em] text-[#444444] main-font font-[350] mt-[16px]"
+            >
+              Тур включает посещение основных туристических достопримечательностей и интересных мест
+              в каждой стране
+            </p>
           </div>
 
           <div class="mt-[36px]">
-            <a href="#" class="font-main text-[#d35400] text-[14px] letter-spacing-[.05em] italic">ПОДРОБНЕЕ...</a>
+            <a href="#" class="font-main text-[#d35400] text-[14px] letter-spacing-[.05em] italic"
+              >ПОДРОБНЕЕ...</a
+            >
           </div>
         </div>
 
         <div class="flex flex-col">
           <div class="relative">
             <img src="/images/main-page/5stans.jpg" />
-            <div class="absolute bottom-0 right-0 bg-[#d35400] text-white p-[10px] maint-font text-[16px]">2250 USD</div>
+            <div
+              class="absolute bottom-0 right-0 bg-[#d35400] text-white p-[10px] maint-font text-[16px]"
+            >
+              2250 USD
+            </div>
           </div>
 
           <div class="mt-[30px] flex-1">
-            <h3 class="text-[20px] letter-spacing-[.05em] text-[#444444] main-font font-semibold">Путешествие по Центральной Азии</h3>
-            <p class="text-[16px] letter-spacing-[.05em] text-[#444444] main-font font-[350] mt-[16px]">Тур включает посещение основных туристических достопримечательностей и интересных мест в каждой стране</p>
+            <h3 class="text-[20px] letter-spacing-[.05em] text-[#444444] main-font font-semibold">
+              Путешествие по Центральной Азии
+            </h3>
+            <p
+              class="text-[16px] letter-spacing-[.05em] text-[#444444] main-font font-[350] mt-[16px]"
+            >
+              Тур включает посещение основных туристических достопримечательностей и интересных мест
+              в каждой стране
+            </p>
           </div>
 
           <div class="mt-[36px]">
-            <a href="#" class="font-main text-[#d35400] text-[14px] letter-spacing-[.05em] italic">ПОДРОБНЕЕ...</a>
+            <a href="#" class="font-main text-[#d35400] text-[14px] letter-spacing-[.05em] italic"
+              >ПОДРОБНЕЕ...</a
+            >
           </div>
         </div>
 
         <div class="flex flex-col">
           <div class="relative">
             <img src="/images/main-page/5stans.jpg" />
-            <div class="absolute bottom-0 right-0 bg-[#d35400] text-white p-[10px] maint-font text-[16px]">2250 USD</div>
+            <div
+              class="absolute bottom-0 right-0 bg-[#d35400] text-white p-[10px] maint-font text-[16px]"
+            >
+              2250 USD
+            </div>
           </div>
 
           <div class="mt-[30px] flex-1">
-            <h3 class="text-[20px] letter-spacing-[.05em] text-[#444444] main-font font-semibold">Путешествие по Центральной Азии</h3>
-            <p class="text-[16px] letter-spacing-[.05em] text-[#444444] main-font font-[350] mt-[16px]">Тур включает посещение основных туристических достопримечательностей и интересных мест в каждой стране</p>
+            <h3 class="text-[20px] letter-spacing-[.05em] text-[#444444] main-font font-semibold">
+              Путешествие по Центральной Азии
+            </h3>
+            <p
+              class="text-[16px] letter-spacing-[.05em] text-[#444444] main-font font-[350] mt-[16px]"
+            >
+              Тур включает посещение основных туристических достопримечательностей и интересных мест
+              в каждой стране
+            </p>
           </div>
 
           <div class="mt-[36px]">
-            <a href="#" class="font-main text-[#d35400] text-[14px] letter-spacing-[.05em] italic">ПОДРОБНЕЕ...</a>
+            <a href="#" class="font-main text-[#d35400] text-[14px] letter-spacing-[.05em] italic"
+              >ПОДРОБНЕЕ...</a
+            >
           </div>
         </div>
       </div>
     </div>
 
     <div class="bg-white">
-      <div class="pl-[260px] pt-[120px] main-font text-[20px] letter-spacing-[.05em] font-[350] text-[#444444] w-[1340px]">
-        Туроператор «Central Asia Travel» организует экскурсионные туры по Великому шелковому пути и его отдельным участкам и городам – Самарканду, Бухаре, Хиве; приключенческие туры по горам Памира и Тянь-Шаня; семейный и пляжный отдых, а также MICE-услуги и деловые поездки в Среднюю Азию. Чтобы решить, куда поехать отдыхать, посмотрите наши наиболее популярные туры:
+      <div
+        class="pl-[260px] pt-[120px] main-font text-[20px] letter-spacing-[.05em] font-[350] text-[#444444] w-[1340px]"
+      >
+        Туроператор «Central Asia Travel» организует экскурсионные туры по Великому шелковому пути и
+        его отдельным участкам и городам – Самарканду, Бухаре, Хиве; приключенческие туры по горам
+        Памира и Тянь-Шаня; семейный и пляжный отдых, а также MICE-услуги и деловые поездки в
+        Среднюю Азию. Чтобы решить, куда поехать отдыхать, посмотрите наши наиболее популярные туры:
       </div>
     </div>
 
@@ -170,7 +214,11 @@ const toggleMenu = (event) => {
       </div>
 
       <div class="flex items-center justify-center gap-[16px]">
-        <a href="#" class="text-[#d35400] text-[16px] letter-spacing-[.05em] main-font font-semibold">Показать все</a>
+        <a
+          href="#"
+          class="text-[#d35400] text-[16px] letter-spacing-[.05em] main-font font-semibold"
+          >Показать все</a
+        >
 
         <div class="flex gap-1">
           <ArrowIcon className="text-white drop-shadow-lg" />
@@ -179,9 +227,208 @@ const toggleMenu = (event) => {
       </div>
     </div>
 
-    <div class="bg-[#]">
+    <div
+      class="bg-[#eb9532] flex justify-center items-center text-white main-font text-[16px] letter-spacing-[.5em] font-semibold"
+    >
+      <div class="px-[20px] py-[10px] hover:text-[#d35300] cursor-pointer">ЭКСКУРСИОННЫЕ</div>
+      <div
+        class="border-l-[1px] border-white px-[20px] py-[10px] hover:text-[#d35300] cursor-pointer"
+      >
+        ТЕМАТИЧЕСКИЕ
+      </div>
+      <div
+        class="border-l-[1px] border-white px-[20px] py-[10px] hover:text-[#d35300] cursor-pointer"
+      >
+        НОВОГОДНИЕ
+      </div>
+      <div
+        class="border-l-[1px] border-white px-[20px] py-[10px] hover:text-[#d35300] cursor-pointer"
+      >
+        ПРИКЛЮЧЕНЧЕСКИЕ
+      </div>
+      <div
+        class="border-l-[1px] border-white px-[20px] py-[10px] hover:text-[#d35300] cursor-pointer"
+      >
+        АЛЬПИНИЗМ
+      </div>
+      <div
+        class="border-l-[1px] border-white px-[20px] py-[10px] hover:text-[#d35300] cursor-pointer"
+      >
+        ТРЕККИНГ
+      </div>
+    </div>
 
-  </div>
+    <div class="flex justify-center gap-8 items-center pt-[50px] pb-[70px]">
+      <div class="max-w-[328px]">
+        <div class="relative overflow-hidden">
+          <img
+            src="/images/main-page/classic_uzbekistan.jpg"
+            class="h-[337px] object-cover object-left"
+          />
+
+          <div class="absolute top-1 right-1 bg-[#e9a83a] rounded-2xl p-[6px] pb-[11px]">
+            <img src="/images/main-page/small-group.png" />
+          </div>
+
+          <div
+            class="absolute bottom-1 left-[50%] translate-x-[-50%] text-white text-[16px] letter-spacing-[.1em] main-font"
+          >
+            8 дней: <span class="font-semibold">695 USD</span>
+          </div>
+        </div>
+        <div class="pt-[20px] bg-white border-1 border-[#c7c7c7] text-center pb-[18px]">
+          <div class="flex justify-center gap-1">
+            <span class="text-[#d35400] text-[12px] letter-spacing-[.25em] main-font"
+              >#ЭКСКУРСИОННЫЙ</span
+            >
+          </div>
+
+          <div class="pt-5 text-[#444] text-[20px] main-font letter-spacing-[0.05em]">
+            КЛАССИЧЕСКИЙ<br />
+            УЗБЕКИСТАН
+          </div>
+
+          <div class="pt-7 text-[#888] text-[16px] main-font">Экскурсионный тур в Узбекистан</div>
+        </div>
+      </div>
+
+      <div class="max-w-[328px]">
+        <div class="relative overflow-hidden">
+          <img
+            src="/images/main-page/classic_uzbekistan.jpg"
+            class="h-[337px] object-cover object-left"
+          />
+
+          <div class="absolute top-1 right-1 bg-[#e9a83a] rounded-2xl p-[6px] pb-[11px]">
+            <img src="/images/main-page/small-group.png" />
+          </div>
+
+          <div
+            class="absolute bottom-1 left-[50%] translate-x-[-50%] text-white text-[16px] letter-spacing-[.1em] main-font"
+          >
+            8 дней: <span class="font-semibold">695 USD</span>
+          </div>
+        </div>
+        <div class="pt-[20px] bg-white border-1 border-[#c7c7c7] text-center pb-[18px]">
+          <div class="flex justify-center gap-1">
+            <span class="text-[#d35400] text-[12px] letter-spacing-[.25em] main-font"
+              >#ЭКСКУРСИОННЫЙ</span
+            >
+          </div>
+
+          <div class="pt-5 text-[#444] text-[20px] main-font letter-spacing-[0.05em]">
+            КЛАССИЧЕСКИЙ<br />
+            УЗБЕКИСТАН
+          </div>
+
+          <div class="pt-7 text-[#888] text-[16px] main-font">Экскурсионный тур в Узбекистан</div>
+        </div>
+      </div>
+
+      <div class="max-w-[328px]">
+        <div class="relative overflow-hidden">
+          <img
+            src="/images/main-page/classic_uzbekistan.jpg"
+            class="h-[337px] object-cover object-left"
+          />
+
+          <div class="absolute top-1 right-1 bg-[#e9a83a] rounded-2xl p-[6px] pb-[11px]">
+            <img src="/images/main-page/small-group.png" />
+          </div>
+
+          <div
+            class="absolute bottom-1 left-[50%] translate-x-[-50%] text-white text-[16px] letter-spacing-[.1em] main-font"
+          >
+            8 дней: <span class="font-semibold">695 USD</span>
+          </div>
+        </div>
+        <div class="pt-[20px] bg-white border-1 border-[#c7c7c7] text-center pb-[18px]">
+          <div class="flex justify-center gap-1">
+            <span class="text-[#d35400] text-[12px] letter-spacing-[.25em] main-font"
+              >#ЭКСКУРСИОННЫЙ</span
+            >
+          </div>
+
+          <div class="pt-5 text-[#444] text-[20px] main-font letter-spacing-[0.05em]">
+            КЛАССИЧЕСКИЙ<br />
+            УЗБЕКИСТАН
+          </div>
+
+          <div class="pt-7 text-[#888] text-[16px] main-font">Экскурсионный тур в Узбекистан</div>
+        </div>
+      </div>
+
+      <div class="max-w-[328px]">
+        <div class="relative overflow-hidden">
+          <img
+            src="/images/main-page/classic_uzbekistan.jpg"
+            class="h-[337px] object-cover object-left"
+          />
+
+          <div class="absolute top-1 right-1 bg-[#e9a83a] rounded-2xl p-[6px] pb-[11px]">
+            <img src="/images/main-page/small-group.png" />
+          </div>
+
+          <div
+            class="absolute bottom-1 left-[50%] translate-x-[-50%] text-white text-[16px] letter-spacing-[.1em] main-font"
+          >
+            8 дней: <span class="font-semibold">695 USD</span>
+          </div>
+        </div>
+        <div class="pt-[20px] bg-white border-1 border-[#c7c7c7] text-center pb-[18px]">
+          <div class="flex justify-center gap-1">
+            <span class="text-[#d35400] text-[12px] letter-spacing-[.25em] main-font"
+              >#ЭКСКУРСИОННЫЙ</span
+            >
+          </div>
+
+          <div class="pt-5 text-[#444] text-[20px] main-font letter-spacing-[0.05em]">
+            КЛАССИЧЕСКИЙ<br />
+            УЗБЕКИСТАН
+          </div>
+
+          <div class="pt-7 text-[#888] text-[16px] main-font">Экскурсионный тур в Узбекистан</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center items-center gap-[35px] bg-[#f9f6ed] py-[10px] text-[#444] main-font text-[18px] text-center">
+      <div class="bg-white px-[36px] hover:text-[#c74e1c] w-[205px] h-[180px] flex flex-col justify-center">
+        <img src="/images/main-page/lupa.png" class="mx-auto" />
+
+        <div class="pt-[8px] w-[135px]">
+          Воспользуйтесь поиском туров
+        </div>
+      </div>
+
+      <div class="px-[36px] w-[225px] h-[180px] flex flex-col justify-center">
+        <img src="/images/main-page/calendar2.png" class="mx-auto" />
+
+        <div class="pt-[8px] w-[150px]" >
+          Посмотрите календарь туров
+        </div>
+      </div>
+
+      <div class="px-[36px] w-[205px] h-[180px] flex flex-col justify-center">
+        <img src="/images/main-page/review.png" class="mx-auto" />
+
+        <div class="pt-[8px] w-[135px]">
+          Почитайте отзывы
+        </div>
+      </div>
+
+      <div class="px-[36px] w-[205px] h-[180px] flex flex-col justify-center">
+        <img src="/images/main-page/mail.png" class="mx-auto" />
+
+        <div class="pt-[8px] w-[135px]">
+          Отправьте заявку
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2>КУДА ПОЕДЕМ</h2>
+    </div>
   </main>
 </template>
 
@@ -196,6 +443,4 @@ const toggleMenu = (event) => {
     url('/images/main-page/arrows.png') bottom/contain no-repeat,
     #f3ebc4;
 }
-
-
 </style>
