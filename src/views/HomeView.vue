@@ -426,8 +426,52 @@ const toggleMenu = (event) => {
       </div>
     </div>
 
-    <div>
-      <h2>КУДА ПОЕДЕМ</h2>
+    <div class="px-[260px] pt-[123px]">
+      <h2 class="text-[#444] main-font text-[36px]">КУДА ПОЕДЕМ</h2>
+    </div>
+
+    <div class="w-full grid grid-cols-3">
+      <div class="relative">
+        <img src="/images/main-page/Uzbekistan.jpg" />
+        <div class="absolute bottom-1 left-[50%] translate-x-[-50%] text-white main-font text-[40px] font-light">Узбекистан</div>
+      </div>
+      <div class="relative">
+        <img src="/images/main-page/Kyrgyzstan.jpg" />
+        <div class="absolute bottom-1 left-[50%] translate-x-[-50%] text-white main-font text-[40px] font-light">Кыргызстан</div>
+      </div>
+      <div class="relative">
+        <img src="/images/main-page/Kazakhstan.jpg" />
+        <div class="absolute bottom-1 left-[50%] translate-x-[-50%] text-white main-font text-[40px] font-light">Казахстан</div>
+      </div>
+      <div class="relative">
+        <img src="/images/main-page/Tajikistan.jpg" />
+        <div class="absolute bottom-1 left-[50%] translate-x-[-50%] text-white main-font text-[40px] font-light">Таджикстан</div>
+      </div>
+      <div class="relative">
+        <img src="/images/main-page/Turkmenistan.jpg" />
+        <div class="absolute bottom-1 left-[50%] translate-x-[-50%] text-white main-font text-[40px] font-light">Туркменистан</div>
+      </div>
+      <div class="relative">
+        <img src="/images/main-page/China.jpg" />
+        <div class="absolute bottom-1 left-[50%] translate-x-[-50%] text-white main-font text-[40px] font-light">Китай</div>
+      </div>
+    </div>
+
+    <div class="pt-[116px] px-[260px] flex justify-between">
+      <h2 class="main-font font-light text-[36px] text-[#444]">ПОПУЛЯРНОЕ: места, где следует побывать</h2>
+
+      <div class="flex gap-1">
+          <ArrowIcon className="text-white drop-shadow-lg" />
+          <ArrowIcon className="text-[#d35400] rotate-180" />
+        </div>
+    </div>
+
+    <div class="pt-[16px] px-[260px] flex justify-between">
+      <div>
+        
+      </div>
+      <div></div>
+      <div></div>
     </div>
   </main>
 </template>
