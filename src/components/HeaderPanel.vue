@@ -9,7 +9,7 @@ import SearchIcon from '@/assets/icons/SearchIcon.vue';
 </script>
 
 <template>
-  <header id="header" class="hidden absolute top-0 left-0 w-full z-100">
+  <header id="header" class="hidden fixed top-0 left-0 w-full z-100">
     <HeaderTop />
 
     <div class="bg-[#FAF8EE] px-[250px]">
