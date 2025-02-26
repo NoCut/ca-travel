@@ -3,6 +3,7 @@ import UkazIcon from '@/assets/icons/UkazIcon.vue'
 import MapIcon from '@/assets/icons/MapIcon.vue'
 import ArrowIcon from '@/assets/icons/ArrowIcon.vue'
 import HeaderTrigger from '@/components/HeaderTrigger.vue';
+import { RouterLink } from 'vue-router';
 </script>
 
 <template>
@@ -519,11 +520,11 @@ import HeaderTrigger from '@/components/HeaderTrigger.vue';
         </div>
 
         <div class="pt-[178px] flex items-end gap-[46px]">
-          <a href="/lenin"
+          <RouterLink to="/lenin"
             class="px-[111px] py-4 border-2 border-white text-white uppercase font-bold bg-white/20 backdrop-blur-none hover:bg-white hover:text-gray-800 transition rounded main-font text-[18px] letter-spacing-[.25em]"
           >
             Подробнее
-        </a>
+        </RouterLink>
 
           <div class="flex gap-[24px]">
             <img src="/images/calendar.png" />
