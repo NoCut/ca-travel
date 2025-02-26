@@ -3,7 +3,7 @@ import ArrowIcon from '@/assets/icons/ArrowIcon.vue'
 </script>
 
 <template>
-  <footer class="footer-bg pt-[21px] pb-[45px] px-[260px]">
+  <footer class="city-bg pt-[21px] pb-[45px] px-[260px]">
     <div class="flex justify-between items-center">
       <div class="text-[36px] text-[#444] font-light main-font">
         ЭТО ИНТЕРЕСНО (наши публикации)
@@ -67,7 +67,7 @@ import ArrowIcon from '@/assets/icons/ArrowIcon.vue'
       <div>
         <h4 class="text-[18px] font-bold">Компания</h4>
 
-        <div class="flex flex-col pt-[18px] gap-[12px] justify-start">
+        <div class="flex flex-col pt-[18px] gap-[8px] justify-start">
           <div>О нас</div>
           <div>Вакансии</div>
           <div>Акции</div>
@@ -79,7 +79,7 @@ import ArrowIcon from '@/assets/icons/ArrowIcon.vue'
       <div>
         <h4 class="text-[18px] font-bold">Медиа</h4>
 
-        <div class="flex flex-col pt-[18px] gap-[12px] justify-start">
+        <div class="flex flex-col pt-[18px] gap-[8px] justify-start">
           <div>Статьи</div>
           <div>Фотогалерея</div>
           <div>Видеогалерея</div>
@@ -89,7 +89,7 @@ import ArrowIcon from '@/assets/icons/ArrowIcon.vue'
       <div>
         <h4 class="text-[18px] font-bold">Туры</h4>
 
-        <div class="flex flex-col pt-[18px] gap-[12px] justify-start">
+        <div class="flex flex-col pt-[18px] gap-[8px] justify-start">
           <div>Поиск туров</div>
           <div>
             Календарь <br />
@@ -101,7 +101,7 @@ import ArrowIcon from '@/assets/icons/ArrowIcon.vue'
       <div>
         <h4 class="text-[18px] font-bold">Направления</h4>
 
-        <div class="flex flex-col pt-[18px] gap-[12px] justify-start">
+        <div class="flex flex-col pt-[18px] gap-[8px] justify-start">
           <div>Узбекистан</div>
           <div>Кыргызстан</div>
           <div>Казахстан</div>
@@ -112,7 +112,7 @@ import ArrowIcon from '@/assets/icons/ArrowIcon.vue'
       </div>
     </div>
 
-    <div class="mt-[36px] flex gap-[234px] px-[90px]">
+    <div class="mt-[36px] flex justify-between px-[90px]">
       <div>
         <div class="text-[16px] text-white font-bold special-font">Мы в соцсетях</div>
 
@@ -152,8 +152,14 @@ import ArrowIcon from '@/assets/icons/ArrowIcon.vue'
 </template>
 
 <style scoped>
-.footer-bg {
-  background-image: url('/images/footer-bg.jpg');
+.city-bg {
+  background-image: url('/images/city-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mountains-bg {
+  background-image: url('/images/mount-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
