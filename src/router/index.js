@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import LeninView from '@/views/LeninView.vue'
+import ClearSnowView from '@/views/ClearSnowView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,8 +23,16 @@ const router = createRouter({
       path: '/lenin',
       name: 'lenin',
       component: LeninView,
+    },
+    {
+      path: '/clear-show',
+      name: 'clear-show',
+      component: ClearSnowView,
     }
   ],
+  scrollBehavior(to, from, savedPosition) {
+    return { top: 0, behavior: 'smooth' }
+  }
 })
 
 export default router

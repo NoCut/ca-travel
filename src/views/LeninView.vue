@@ -297,7 +297,7 @@ import HeaderTrigger from '@/components/HeaderTrigger.vue'
 
     <div class="w-full flex">
       <div class="w-[50%]">
-        <video></video>
+        <video src="/videos/camp.mp4" class="h-full w-full"></video>
       </div>
 
       <div
