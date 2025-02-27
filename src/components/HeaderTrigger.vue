@@ -19,7 +19,7 @@ const toggleMenu = (event) => {
         >
       </button>
 
-      <button class="border-0" v-if="currentRoute.name === 'lenin'">
+      <button class="border-0" v-if="currentRoute.name !== 'home'">
         <img src="/images/second-menu.png" />
       </button>
     </div>

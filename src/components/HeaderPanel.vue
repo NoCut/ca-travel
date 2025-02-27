@@ -13,7 +13,7 @@ import SearchIcon from '@/assets/icons/SearchIcon.vue';
     <HeaderTop />
 
     <div class="bg-[#FAF8EE] px-[250px]">
-      <div class="flex justify-between align-center px-4 uppercase py-[20px] main-font font-semibold font-[15px] text-[#444444] border-b-2 border-[#b8b6b2]">
+      <div class="flex justify-between align-center px-4 uppercase py-[20px] main-font font-semibold text-[15px] text-[#444444] border-b-2 border-[#b8b6b2]">
         <div class="flex gap-[12px] hover:text-[#d35400] text-[#d35400]">
           <UkazIcon />
           <span>Куда поехать</span>

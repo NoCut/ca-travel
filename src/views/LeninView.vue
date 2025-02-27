@@ -52,11 +52,11 @@ import HeaderTrigger from '@/components/HeaderTrigger.vue'
       <div class="flex justify-between gap-[77px] pt-[25px]">
         <div>
           <div class="flex justify-end gap-[27px] items-center">
-            <img src="/images/lenin/facebook-icon.png" class="h-[23px]" />
-            <img src="/images/lenin/twitter.png" class="h-[23px]" />
-            <img src="/images/lenin/WA.png" class="h-[23px]" />
-            <img src="/images/lenin/viber.png" class="h-[23px]" />
-            <img src="/images/lenin/tg.png" class="h-[23px]" />
+            <img src="/icons/facebook-icon.png" class="h-[23px]" />
+            <img src="/icons/twitter.png" class="h-[23px]" />
+            <img src="/icons/WA.png" class="h-[23px]" />
+            <img src="/icons/viber.png" class="h-[23px]" />
+            <img src="/icons/tg.png" class="h-[23px]" />
           </div>
 
           <div class="main-font text-[17px] text-[#444] pt-[30px] font-light">
@@ -297,7 +297,7 @@ import HeaderTrigger from '@/components/HeaderTrigger.vue'
 
     <div class="w-full flex">
       <div class="w-[50%]">
-        <video src="/videos/camp.mp4" class="h-full w-full"></video>
+        <video src="/videos/camp.mp4" class="h-full w-full object-cover"></video>
       </div>
 
       <div
@@ -374,7 +374,7 @@ import HeaderTrigger from '@/components/HeaderTrigger.vue'
           </div>
         </div>
 
-        <div class="py-[16px] px-[58px] bg-[#c74e1c] text-white rounded-xl main-font text-[18px]">
+        <div class="py-[16px] px-[58px] bg-[#c74e1c] text-white rounded-lg main-font text-[18px]">
           Задать вопрос
         </div>
       </div>

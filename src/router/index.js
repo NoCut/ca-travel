@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import LeninView from '@/views/LeninView.vue'
 import ClearSnowView from '@/views/ClearSnowView.vue'
+import ToursListView from '@/views/ToursListView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -25,9 +26,14 @@ const router = createRouter({
       component: LeninView,
     },
     {
-      path: '/clear-show',
-      name: 'clear-show',
+      path: '/clear-snow',
+      name: 'clear-snow',
       component: ClearSnowView,
+    },
+    {
+      path: '/tours',
+      name: 'tours',
+      component: ToursListView,
     }
   ],
   scrollBehavior(to, from, savedPosition) {
