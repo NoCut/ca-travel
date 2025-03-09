@@ -10,8 +10,7 @@ defineProps({
 <template>
   <svg
     :class="className"
-    width="25"
-    height="23"
+
     viewBox="0 0 25 23"
     fill="currentColor"
     xmlns="http://www.w3.org/2000/svg"
