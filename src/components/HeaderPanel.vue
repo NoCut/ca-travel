@@ -14,7 +14,6 @@ const supportedLanguages = ['en', 'ru', 'fr', 'de', 'es']
 
 const changeLanguage = (lang, event = null) => {
   sessionStorage.setItem('selectedLanguage', lang)
-  router.push(`/${lang}${route.path.replace(/^\/[a-z]{2}/, '')}`)
 
   if (event) {
     const textElements = Array.from(event.currentTarget.parentElement.children)
@@ -257,7 +256,7 @@ onMounted(() => {
         </button>
 
         <RouterLink
-          to="/tours"
+          :to="`/${route.params.lang}/tours`"
           class="flex gap-[12px] hover:text-[#d35400] cursor-pointer items-center transition-colors"
           @click="hideMenu"
         >

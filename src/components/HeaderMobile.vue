@@ -12,14 +12,11 @@ const currentMenu = ref('main-menu')
 const direction = ref('')
 const currentLang = ref(sessionStorage.getItem('selectedLanguage') || 'ru')
 
-const route = useRoute()
-const router = useRouter()
 const supportedLanguages = ['en', 'ru', 'fr', 'de', 'es']
 
 const changeLanguage = (lang) => {
   sessionStorage.setItem('selectedLanguage', lang)
   currentLang.value = lang
-  router.push(`/${lang}${route.path.replace(/^\/[a-z]{2}/, '')}`)
 }
 
 const hideMenuMobile = () => {

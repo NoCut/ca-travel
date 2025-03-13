@@ -3,9 +3,25 @@ import { RouterLink, RouterView } from 'vue-router'
 import HeaderPanel from './components/HeaderPanel.vue'
 import FooterPanel from './components/FooterPanel.vue';
 import HeaderMobile from './components/HeaderMobile.vue';
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
+
+const supportedLangs = ['ru', 'en', 'es', 'fr', 'de']
+
+const getSystemLang = () => {
+  const storedLang = sessionStorage.getItem("selectedLanguage");
+  if (storedLang && supportedLangs.includes(storedLang)) {
+    return storedLang;
+  }
+
+  const systemLang = navigator.language.slice(0, 2);
+  return supportedLangs.includes(systemLang) ? systemLang : "en";
+};
 
 const userWidth = ref(window.innerWidth);
+
+onMounted(() => {
+  console.log(getSystemLang());
+})
 </script>
 
 <template>

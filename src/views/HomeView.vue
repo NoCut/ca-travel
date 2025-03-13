@@ -582,7 +582,7 @@ const isMobile = ref(window.innerWidth < 1025)
           class="pt-[178px] max-tb:pt-[105px] max-stb:pt-[25px] flex items-end gap-[46px] max-stb:gap-[33px] max-tb:flex-col max-tb:items-stretch"
         >
           <RouterLink
-            to="/lenin"
+            :to="`/lenin`"
             class="px-[111px] py-4 border-2 border-white text-white uppercase font-bold bg-white/20 backdrop-blur-none hover:bg-white hover:text-gray-800 transition rounded main-font text-[18px]"
             v-if="!isMobile"
           >

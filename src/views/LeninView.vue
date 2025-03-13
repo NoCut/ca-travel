@@ -1,22 +1,26 @@
 <script setup>
 import HeaderTrigger from '@/components/HeaderTrigger.vue'
+
+import { ref } from 'vue';
+
+const isMobile = ref(window.innerWidth < 1025)
 </script>
 
 <template>
   <main class="relative">
     <HeaderTrigger />
 
-    <div class="lenin-bg px-[260px]">
-      <div class="flex justify-center pt-[23px]">
+    <div class="lenin-bg px-[260px] max-lp:px-[20px]">
+      <div class="flex justify-center pt-[23px] max-tb:pt-[19px]">
         <img src="/images/lenin/logo.png" class="w-[400px]" />
       </div>
 
-      <div class="pt-[289px] text-white main-font">
-        <h1 class="font-semibold text-[72px]">ПИК ЛЕНИНА</h1>
-        <div class="text-[48px]">Восхождения · Треккинг · Отдых на Памире</div>
+      <div class="pt-[289px] max-tb:pt-[276px] text-white main-font max-tb:text-center">
+        <h1 class="font-semibold text-[72px] max-tb:text-[68px]">ПИК ЛЕНИНА</h1>
+        <div class="text-[48px] max-tb:text-[42px]">Восхождения · Треккинг · Отдых на Памире</div>
       </div>
 
-      <div class="pt-[252px] flex justify-between pb-[86px]">
+      <div class="pt-[252px] max-tb:pt-[105px] flex justify-between max-tb:items-center max-tb:gap-[103px] max-tb:flex-col pb-[86px]">
         <div class="flex items-center gap-[32px]">
           <button
             class="px-[73px] py-4 border-2 border-white text-white uppercase font-bold bg-white/20 backdrop-blur-none hover:bg-white hover:text-gray-800 transition rounded main-font text-[18px]"
@@ -31,35 +35,35 @@ import HeaderTrigger from '@/components/HeaderTrigger.vue'
           </button>
         </div>
 
-        <div class="flex gap-4">
+        <div class="flex gap-4 max-tb:items-center">
           <img src="/images/calendar.png" />
 
-          <div class="main-font text-white text-[20px] w-[300px]">
-            Наши лагеря будут открыты<br />с 29 июня по 1 сентября 2021 г.
+          <div class="main-font text-white text-[20px] w-[300px] max-tb:w-full">
+            Наши лагеря будут открыты<br class="max-tb:hidden" />с 29 июня по 1 сентября 2021 г.
           </div>
         </div>
       </div>
     </div>
 
-    <div class="px-[260px] pt-[115px] pb-[62px]">
-      <div>
+    <div class="px-[260px] max-lp:px-[20px] pt-[115px] pb-[62px]">
+      <div class="max-tb:text-center">
         <h3 class="main-font text-[36px] font-semibold text-[#444]">
           ВОСХОЖДЕНИЕ НА ПИК ЛЕНИНА (7134 м)
         </h3>
         <div class="main-font text-[36px] font-light text-[#444]">Памир, Кыргызстан</div>
       </div>
 
-      <div class="flex justify-between gap-[77px] pt-[25px]">
-        <div>
-          <div class="flex justify-end gap-[27px] items-center">
-            <img src="/icons/facebook-icon.png" class="h-[23px]" />
-            <img src="/icons/twitter.png" class="h-[23px]" />
-            <img src="/icons/WA.png" class="h-[23px]" />
-            <img src="/icons/viber.png" class="h-[23px]" />
-            <img src="/icons/tg.png" class="h-[23px]" />
+      <div class="flex justify-between max-tb:flex-col gap-[77px] max-lp:gap-[30px] pt-[25px] max-lp:pt-[19px]">
+        <div class="w-[50%] max-tb:w-full">
+          <div class="flex justify-end max-tb:justify-center gap-[27px] items-center">
+            <img src="/icons/facebook-icon.png" class="max-h-[23px]" />
+            <img src="/icons/twitter.png" class="max-h-[23px]" />
+            <img src="/icons/WA.png" class="max-h-[23px]" />
+            <img src="/icons/viber.png" class="max-h-[23px]" />
+            <img src="/icons/tg.png" class="max-h-[23px]" />
           </div>
 
-          <div class="main-font text-[17px] text-[#444] pt-[30px] font-light">
+          <div class="main-font text-[17px] max-lp:text-[16px] text-[#444] pt-[30px] max-lp:pt-[20px] font-light">
             <span class="font-semibold">Пик Ленина (7134.3 м)</span> - один из самых известных,
             доступных и наиболее часто посещаемых
             <span class="font-semibold">семитысячников Памира</span>, расположен на границе между
@@ -84,10 +88,10 @@ import HeaderTrigger from '@/components/HeaderTrigger.vue'
           </div>
         </div>
 
-        <div class="w-[645px]">
+        <div class="w-[50%] max-tb:w-full">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12342.14464178692!2d72.87759929999999!3d39.34409335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38befc513bcb0635%3A0xa7c9fe33c28cb1!2z0J_QuNC6INCb0LXQvdC40L3QsA!5e0!3m2!1sru!2s!4v1740508998582!5m2!1sru!2s"
-            width="600"
+            width="100%"
             height="450"
             style="border: 0"
             allowfullscreen=""
@@ -99,10 +103,10 @@ import HeaderTrigger from '@/components/HeaderTrigger.vue'
     </div>
 
     <div
-      class="flex justify-center items-center gap-[35px] bg-[#f9f6ed] py-[24px] text-[#444] main-font text-[18px] text-center"
+      class="flex justify-center items-center gap-[35px] max-tb:gap-[15px] bg-[#f9f6ed] py-[24px] text-[#444] main-font text-[18px] text-center"
     >
       <div
-        class="bg-white px-[36px] hover:text-[#c74e1c] w-[205px] h-[180px] flex flex-col justify-center"
+        class="bg-white px-[36px] max-tb:px-[18px] hover:text-[#c74e1c] w-[205px] h-[180px] flex flex-col justify-center"
       >
         <img src="/images/lenin/prices.png" class="mx-auto" />
 
@@ -110,7 +114,7 @@ import HeaderTrigger from '@/components/HeaderTrigger.vue'
       </div>
 
       <div
-        class="bg-white px-[36px] hover:text-[#c74e1c] w-[205px] h-[180px] flex flex-col justify-center"
+        class="bg-white px-[36px] max-tb:px-[18px] hover:text-[#c74e1c] w-[205px] h-[180px] flex flex-col justify-center"
       >
         <img src="/images/main-page/calendar2.png" class="mx-auto" />
 
@@ -118,7 +122,7 @@ import HeaderTrigger from '@/components/HeaderTrigger.vue'
       </div>
 
       <div
-        class="bg-white px-[36px] hover:text-[#c74e1c] w-[205px] h-[180px] flex flex-col justify-center"
+        class="bg-white px-[36px] max-tb:px-[18px] hover:text-[#c74e1c] w-[205px] h-[180px] flex flex-col justify-center"
       >
         <img src="/images/main-page/review.png" class="mx-auto" />
 
@@ -126,7 +130,7 @@ import HeaderTrigger from '@/components/HeaderTrigger.vue'
       </div>
 
       <div
-        class="bg-white px-[36px] hover:text-[#c74e1c] w-[205px] h-[180px] flex flex-col justify-center"
+        class="bg-white px-[36px] max-tb:px-[18px] hover:text-[#c74e1c] w-[205px] h-[180px] flex flex-col justify-center"
       >
         <img src="/images/main-page/mail.png" class="mx-auto" />
 
@@ -134,19 +138,19 @@ import HeaderTrigger from '@/components/HeaderTrigger.vue'
       </div>
     </div>
 
-    <div class="px-[260px] pt-[118px] main-font text-[#444] text-[36px]">
+    <div class="px-[260px] max-lp:px-[20px] pt-[118px] max-tb:pt-[96px] main-font text-[#444] text-[36px] max-tb:text-center">
       <div>
         <h2 class="font-semibold">ЦЕНОВЫЕ ПАКЕТЫ</h2>
         <div class="font-light">для программы восхождения на пик Ленина</div>
       </div>
 
-      <div class="mt-[44px] mb-[44px] max-w-[1075px]">
+      <div class="mt-[44px] max-tb:mt-[32px] mb-[44px] max-w-[1075px]">
         <div class="main-font text-light text-[18px] text-[#444]">
           Здесь вы можете выбрать один из <span class="font-semibold">12 ценовых пакетов</span>,
           которые различаются по набору включенных услуг и, соответственно, по стоимости – от самого
-          <span class="font-semibold">бюджетного</span>
+          <span class="font-semibold">бюджетного </span>
           <span class="text-[#c74e1c]">Супер Эконом</span> варианта до наиболее
-          <span class="font-semibold">комфортного</span>
+          <span class="font-semibold">комфортного </span>
           <span class="text-[#c74e1c]">VIP-пакета</span>.
         </div>
 
@@ -156,7 +160,7 @@ import HeaderTrigger from '@/components/HeaderTrigger.vue'
       </div>
     </div>
 
-    <div class="grid grid-cols-3">
+    <div class="grid grid-cols-3 max-tb:grid-cols-2">
       <div class="relative">
         <img src="/images/lenin/basic.jpg" class="object-cover w-full" />
 
@@ -191,16 +195,16 @@ import HeaderTrigger from '@/components/HeaderTrigger.vue'
       </div>
     </div>
 
-    <div class="bg-[#f9f6ed] pt-[37px] px-[260px] pb-[110px]">
-      <div class="bg-white flex px-[50px] justify-between py-[16px] gap-[134px] items-center">
-        <div class="main-font font-light text-[17px] text-[#444] flex-1">
+    <div class="bg-[#f9f6ed] pt-[37px] px-[260px] max-lp:px-[20px] pb-[110px]">
+      <div class="bg-white flex px-[50px] max-tb:px-[20px] justify-between py-[16px] gap-[134px] max-tb:gap-[60px] items-center">
+        <div class="main-font font-light text-[17px] max-tb:text-[16px] text-[#444] flex-1">
           <span class="font-semibold text-[#c74e1c]">ВАЖНО!</span> В каждый пакет включен переезд
           <span class="font-semibold">Ош – Базовый лагерь – Ош</span> на комфортабельном транспорте,
           который мы организуем <span class="font-semibold">в любые удобные для вас даты</span> в
           период с 29 июня по 1 сентября 2021.
         </div>
 
-        <div class="flex-1 main-font font-light text-[17px] text-[#444]">
+        <div class="flex-1 main-font font-light text-[17px] max-tb:text-[16px] text-[#444]">
           <div class="font-semibold text-[#c74e1c]">Время отправления транспорта:</div>
 
           <ul class="list-disc pl-[20px]">
@@ -214,7 +218,7 @@ import HeaderTrigger from '@/components/HeaderTrigger.vue'
       </div>
 
       <div
-        class="mx-[88px] mt-[34px] border-t-1 border-[#888] pt-[26px] flex justify-between items-center"
+        class="mx-[88px] max-tb:mx-[20px] mt-[34px] border-t-1 border-[#888] pt-[26px] flex justify-between items-center"
       >
         <div class="main-font font-bold text-[17px] text-[#c74e1c]">
           Сколько стоит экспедиция на пик Ленина и из чего складывается цена
@@ -225,7 +229,7 @@ import HeaderTrigger from '@/components/HeaderTrigger.vue'
         </div>
       </div>
 
-      <div class="grid grid-cols-3 mx-[88px] mt-[50px] gap-y-[38px] gap-x-[80px]">
+      <div class="grid grid-cols-3 max-tb:grid-cols-2 mx-[88px] max-lp:mx-[20px] mt-[50px] gap-y-[38px] gap-x-[80px]">
         <div class="flex items-center gap-[24px]">
           <div class="bg-white rounded-[90px] w-[97px] h-[97px] flex justify-center items-center">
             <img src="/images/lenin/passport.png" />
@@ -287,7 +291,7 @@ import HeaderTrigger from '@/components/HeaderTrigger.vue'
         </div>
       </div>
 
-      <div class="flex items-center gap-3 mt-[40px] mx-[88px] pb-[14px] border-b-1 border-[#888]">
+      <div class="flex items-center gap-3 mt-[40px] mx-[88px] max-tb:mx-[20px] pb-[14px] border-b-1 border-[#888]">
         <img src="/images/lenin/download2.png" />
         <div class="main-font font-semibold text-[16px] text-[#c74e1c]">
           Прайс-лист на дополнительные и отдельные услуги в Базовых лагерях под пиком Ленина
@@ -295,47 +299,48 @@ import HeaderTrigger from '@/components/HeaderTrigger.vue'
       </div>
     </div>
 
-    <div class="w-full flex">
-      <div class="w-[50%]">
-        <video src="/videos/camp.mp4" class="h-full w-full object-cover"></video>
+    <div class="w-full relative flex items-stretch bg-linear-to-b from-[#2778c2] to-[#0079c6]">
+      <div class="w-[50%] self-center">
+        <video src="/videos/camp.mp4" controls class="h-full w-full object-fill"></video>
       </div>
 
       <div
-        class="flex-1 relative bg-linear-to-b from-[#2778c2] to-[#0079c6] overflow-hidden px-[120px] pt-[140px] pb-[50px] w-[50%]"
+        class="flex flex-col self-center h-full relative  overflow-hidden px-[120px] max-lp:px-[50px] max-tb:px-[30px] max-tb:py-[32px] justify-center items-start w-[50%]"
       >
-        <h2 class="main-font font-semibold text-[36px] text-white">
-          ВОСХОЖДЕНИЕ<br />
+        <h2 class="main-font font-semibold text-[36px] max-lp:text-[20px] text-white">
+          ВОСХОЖДЕНИЕ<br class="max-lp:hidden" />
           НА ПИК ЛЕНИНА
         </h2>
 
-        <div class="main-font font-light text-white text-[24px] mt-[55px]">
+        <div class="main-font font-light text-white text-[24px] max-lp:text-[16px] mt-[55px] max-lp:mt-[16px]">
           Подъем на вершину пика Ленина (7134 м) и фантастические панорамы вокруг
         </div>
 
-        <div class="main-font font-light text-white text-[16px] mt-[47px]">
+        <div class="main-font font-light text-white text-[16px] max-lp:text-[15px] mt-[47px] max-lp:mt-[16px]">
           Автор: Алексей Колганов
         </div>
 
         <button
-          class="px-[16px] py-2 border-2 border-white text-white mt-[47px] bg-white/20 backdrop-blur-none hover:bg-white hover:text-gray-800 transition rounded main-font text-[16px] font-light"
+          class="px-[16px] py-2 border-2 border-white text-white mt-[47px] max-tb:mt-[43px] bg-white/20 backdrop-blur-none hover:bg-white hover:text-gray-800 transition rounded main-font text-[16px] font-light"
         >
           Перейти в видеогалерею »»
         </button>
 
-        <div class="absolute bottom-0 right-0">
+
+      </div>
+      <div class="absolute bottom-0 right-0">
           <img src="/images/lenin/ornament.png" />
-        </div>
       </div>
     </div>
 
-    <div class="px-[348px] pt-[95px]">
-      <div class="flex relative">
-        <div class="bg-[#e8aa3b] w-[50%] main-font text-white">
-          <span class="pt-[26px] ml-[30px] text-[24px] border-b-1 border-white">8 гарантированных дат</span>
+    <div class="px-[15%] max-lp:px-[20px] pt-[95px] max-tb:hidden">
+      <div class="flex items-stretch relative bg-[#e8aa3b]">
+        <div class="relative w-[50%] main-font flex flex-col items-start justify-center text-white pt-[26px]">
+          <span class="ml-[30px] absolute top-6 left-2 text-[24px] max-lp:text-[22px] border-b-1 border-white">8 гарантированных дат</span>
 
-          <div class="pl-[148px] pb-[43px] pt-[67px]">
-            <h3 class="font-bold text-[36px]">КУРОРТНЫЙ ПАМИР</h3>
-            <div class="mt-[22px] text-[22px]">Активный семейный отдых в горах Памира Приключенческий тур с треккингом</div>
+          <div class="pl-[148px] max-lp:pl-[90px] pb-[43px] pt-[67px]">
+            <h3 class="font-bold text-[36px] max-lp:text-[32px]">КУРОРТНЫЙ ПАМИР</h3>
+            <div class="mt-[22px] text-[22px] max-lp:text-[20px]">Активный семейный отдых в горах Памира Приключенческий тур с треккингом</div>
 
             <div class="text-[15px] font-light mt-[22px]">Кыргызстан, горы Памира <br>8 дней / 7 ночей</div>
 
@@ -347,7 +352,7 @@ import HeaderTrigger from '@/components/HeaderTrigger.vue'
           </div>
         </div>
 
-        <div>
+        <div class="w-[50%]">
           <img src="/images/lenin/pamir-group.jpg" class="h-full w-full object-cover"/>
         </div>
 
@@ -361,8 +366,8 @@ import HeaderTrigger from '@/components/HeaderTrigger.vue'
       </div>
     </div>
 
-    <div class="mt-[96px] mb-[74px] flex justify-center">
-      <div class="w-[50%] flex justify-between border-1 border-[#888] px-[35px] py-[22px]">
+    <div class="mt-[96px] max-tb:mt-[79px] mb-[74px] flex justify-center">
+      <div class="w-[50%] max-lp:w-[75%] max-tb:w-full max-tb:mx-[10px] flex justify-between border-1 border-[#888] px-[35px] max-tb:px-[20px] py-[22px]">
         <div class="flex gap-6 items-center">
           <img src="/images/main-page/vopros.png" class="h-[40px] w-[35px]" />
 
@@ -380,6 +385,171 @@ import HeaderTrigger from '@/components/HeaderTrigger.vue'
       </div>
     </div>
   </main>
+
+  <footer class="mount-bg bg-right pt-[21px] pb-[45px] px-[260px] max-lp:px-[30px] max-tb:px-[15px]">
+    <div class="flex justify-between items-center max-tb:justify-center">
+      <div class="text-[36px] max-mb:text-[20px] max-mb:text-center text-[#444] font-light main-font">
+        ЭТО ИНТЕРЕСНО
+      </div>
+    </div>
+
+    <div class="flex justify-between gap-[10px] pt-[21px]">
+      <div class="max-w-[446px] max-mb:hidden">
+        <img src="/images/lenin/our.jpg" class="w-full object-center" />
+
+        <div class="main-font text-[16px] uppercase text-[#444] text-center mt-[24px]">Наши восходители</div>
+      </div>
+
+      <div class="max-w-[446px] max-sm:hidden">
+        <img src="/images/lenin/reviews.jpg" class="w-full object-center" />
+
+        <div class="main-font text-[16px] uppercase text-[#444] text-center mt-[24px]">Наши восходители</div>
+      </div>
+
+      <div class="max-w-[446px]">
+        <img src="/images/lenin/clearsnow.jpg" class="w-full object-center" />
+
+        <div class="main-font text-[16px] uppercase text-[#444] text-center mt-[24px]">Наши восходители</div>
+      </div>
+    </div>
+
+    <div class="flex gap-[40px] max-tb:gap-[10px] justify-betwen max-stb:flex-col items-start mt-[170px] max-stb:mt-[80px] max-stb:px-[30px] max-mb:px-0">
+      <div class="">
+      <img src="/images/footer-logo.png" class="max-w-[230px]" />
+      </div>
+      <div
+        class="flex max-mb:flex-col justify-between items-start main-font text-white text-[16px] px-[90px] max-stb:px-0 max-lp:px-[15px] max-stb:mt-[22px] w-full"
+      >
+        <div class="w-full max-mb:border-t-1 max-mb:border-[#ad4d26] max-mb:py-[8px]">
+          <div class="flex justify-between">
+            <h4 class="text-[18px] max-mb:text-[15px] font-bold">Компания</h4>
+
+            <div class="relative mb:hidden">
+                <div
+                  class="w-[7px] h-[1px] bg-white absolute top-1/2 left-1/2 -translate-x-2"
+                ></div>
+                <div
+                  class="w-[7px] h-[1px] bg-white rotate-90 transition-transform duration-300 absolute top-1/2 left-1/2 -translate-x-2"
+                ></div>
+              </div>
+          </div>
+
+          <div class="flex flex-col pt-[18px] gap-[8px] justify-start max-mb:hidden">
+            <div>О нас</div>
+            <div>Вакансии</div>
+            <div>Акции</div>
+            <div>Отзывы</div>
+            <div>Контакты</div>
+          </div>
+        </div>
+
+        <div class="w-full max-mb:border-t-1 max-mb:border-[#ad4d26] max-mb:py-[8px]">
+          <div class="flex justify-between">
+            <h4 class="text-[18px] max-mb:text-[15px] font-bold">Медия</h4>
+
+            <div class="relative mb:hidden">
+                <div
+                  class="w-[7px] h-[1px] bg-white absolute top-1/2 left-1/2 -translate-x-2"
+                ></div>
+                <div
+                  class="w-[7px] h-[1px] bg-white rotate-90 transition-transform duration-300 absolute top-1/2 left-1/2 -translate-x-2"
+                ></div>
+              </div>
+          </div>
+
+          <div class="flex flex-col pt-[18px] gap-[8px] justify-start max-mb:hidden">
+            <div>Статьи</div>
+            <div>Фотогалерея</div>
+            <div>Видеогалерея</div>
+          </div>
+        </div>
+
+        <div class="w-full max-mb:border-t-1 max-mb:border-[#ad4d26] max-mb:py-[8px]">
+          <div class="flex justify-between">
+            <h4 class="text-[18px] max-mb:text-[15px] font-bold">Туры</h4>
+
+            <div class="relative mb:hidden">
+                <div
+                  class="w-[7px] h-[1px] bg-white absolute top-1/2 left-1/2 -translate-x-2"
+                ></div>
+                <div
+                  class="w-[7px] h-[1px] bg-white rotate-90 transition-transform duration-300 absolute top-1/2 left-1/2 -translate-x-2"
+                ></div>
+              </div>
+          </div>
+
+          <div class="flex flex-col pt-[18px] gap-[8px] justify-start max-mb:hidden">
+            <div>Поиск туров</div>
+            <div>
+              Календарь <br />
+              групповых туров
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full max-mb:border-t-1 max-mb:border-b-1 max-mb:border-[#ad4d26] max-mb:py-[8px]">
+          <div class="flex justify-between">
+            <h4 class="text-[18px] max-mb:text-[15px] font-bold">Направления</h4>
+
+            <div class="relative mb:hidden">
+                <div
+                  class="w-[7px] h-[1px] bg-white absolute top-1/2 left-1/2 -translate-x-2"
+                ></div>
+                <div
+                  class="w-[7px] h-[1px] bg-white rotate-90 transition-transform duration-300 absolute top-1/2 left-1/2 -translate-x-2"
+                ></div>
+              </div>
+          </div>
+
+          <div class="flex flex-col pt-[18px] gap-[8px] justify-start max-mb:hidden">
+            <div>Узбекистан</div>
+            <div>Кыргызстан</div>
+            <div>Казахстан</div>
+            <div>Туркменистан</div>
+            <div>Таджикистан</div>
+            <div>Китай</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-[36px] max-mb:mt-[8px] flex max-stb:flex-row-reverse max-mb:flex-col-reverse justify-between px-[90px] max-lp:px-[15px] max-mb:px-0">
+      <div class="max-mb:mt-[35px] max-mb:mx-auto">
+        <div class="text-[16px] text-white font-bold special-font max-mb:text-center">Мы в соцсетях</div>
+
+        <div class="flex gap-[15px] mt-[24px]">
+          <img src="/images/footer/fb2.png" class="h-[35px]" />
+          <img src="/images/footer/inst2.png" class="h-[35px]" />
+          <img src="/images/footer/tw2.png" class="h-[35px]" />
+          <img src="/images/footer/yt2.png" class="h-[35px]" />
+        </div>
+      </div>
+
+      <div class="">
+        <h3 class="text-[16px] main-font text-[#f9f6ed] font-bold text-center max-mb:justify-self-start">
+          Подпишитесь на нашу рассылку
+        </h3>
+
+        <div class="mt-[24px] max-mb:mt-[21px] flex gap-1">
+          <input
+            type="email"
+            placeholder="Введите Ваш E-mail"
+            class="py-[15px] pl-[56px] max-mb:pl-[11px] main-font text-[16px] max-mb:text-[15px] max-w-[374px] max-stb:w-full bg-[#d6d4ce]"
+          />
+
+          <div
+            class="px-[32px] py-[16px] bg-[#c54d1b] main-font text-[16px] text-[#362d2e] font-light"
+          >
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full text-center mt-[42px] main-font text-[#f9f6ed] text-[14px]">
+      Copyright © 2020 Central Asia Travel
+    </div>
+  </footer>
 </template>
 
 <style scoped>
@@ -387,4 +557,11 @@ import HeaderTrigger from '@/components/HeaderTrigger.vue'
   background-image: url('/images/lenin/bg.jpg');
   background-size: cover;
 }
+
+.mount-bg {
+  background-image: url('/images/bg-mount.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 </style>
