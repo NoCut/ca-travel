@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import LeninView from '@/views/LeninView.vue'
 import ClearSnowView from '@/views/ClearSnowView.vue'
 import ToursListView from '@/views/ToursListView.vue'
+import ReqView from '@/views/ReqView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -31,6 +32,11 @@ const router = createRouter({
       path: '/tours',
       name: 'tours',
       component: ToursListView,
+    },
+    {
+      path: '/req',
+      name: 'req',
+      component: ReqView,
     }
   ],
   scrollBehavior() {

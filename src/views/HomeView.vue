@@ -16,7 +16,7 @@ const isMobile = ref(window.innerWidth < 1025)
       >
         <img
           src="/images/main-logo.png"
-          class="max-tb:w-[717px] max-tb:justify-self-center max-stb:hidden"
+          class="max-tb:w-[80%] max-tb:justify-self-center max-mb:hidden"
         />
         <img
           src="/images/mob_logo.png"
@@ -517,7 +517,7 @@ const isMobile = ref(window.innerWidth < 1025)
       </div>
     </div>
 
-    <div class="pt-[26px] px-[260px] max-lp:px-[30px] max-mb:px-[15px] max-lp:gap-[10px] flex justify-between">
+    <div class="pt-[26px] px-[260px] max-lp:px-[30px] max-mb:px-[15px] max-lp:gap-[10px] flex justify-between gap-[10px]">
       <div class="max-w-[448px] max-mb:hidden">
         <div>
           <img src="/images/main-page/Samarkand.jpg" />
@@ -752,7 +752,7 @@ const isMobile = ref(window.innerWidth < 1025)
       </div>
     </div>
 
-    <div class="flex max-stb:flex-col items-start mt-[170px] max-stb:mt-[80px] max-stb:px-[30px] max-mb:px-0">
+    <div class="flex gap-[30px] max-stb:flex-col items-start mt-[170px] max-stb:mt-[80px] max-stb:px-[30px] max-mb:px-0">
       <img src="/images/footer-logo.png" class="max-w-[230px]" />
 
       <div
@@ -872,7 +872,7 @@ const isMobile = ref(window.innerWidth < 1025)
           <input
             type="email"
             placeholder="Введите Ваш E-mail"
-            class="py-[15px] pl-[56px] max-mb:pl-[11px] main-font text-[16px] max-mb:text-[15px] max-w-[374px] max-stb:w-full bg-[#d6d4ce]"
+            class="py-[15px] pl-[56px] max-mb:pl-[11px] main-font text-[16px] max-mb:text-[15px] w-[374px] max-stb:w-full bg-[#d6d4ce]"
           />
 
           <div
