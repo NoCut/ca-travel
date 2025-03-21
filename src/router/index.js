@@ -4,6 +4,8 @@ import LeninView from '@/views/LeninView.vue'
 import ClearSnowView from '@/views/ClearSnowView.vue'
 import ToursListView from '@/views/ToursListView.vue'
 import ReqView from '@/views/ReqView.vue'
+import CampView from '@/views/CampView.vue'
+import InfoView from '@/views/InfoView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -37,6 +39,16 @@ const router = createRouter({
       path: '/req',
       name: 'req',
       component: ReqView,
+    },
+    {
+      path: '/camps',
+      name: 'camps',
+      component: CampView,
+    },
+    {
+      path: '/info',
+      name: 'info',
+      component: InfoView,
     }
   ],
   scrollBehavior() {
