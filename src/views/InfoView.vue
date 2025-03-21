@@ -1182,7 +1182,9 @@ const toggleHiddenText = (event) => {
                     телефонам:
                   </p>
 
-                  <ul class="list-disc list-inside pl-[20px] text-[#444] font-light text-[17px] main-font">
+                  <ul
+                    class="list-disc list-inside pl-[20px] text-[#444] font-light text-[17px] main-font"
+                  >
                     <li><span class="pl-[20px]">+7 (499) 50498 99 - Россия </span></li>
                     <li><span class="pl-[20px]">(+996) 55665 77 99 - Киргизия</span></li>
                     <li><span class="pl-[20px]">(+99871) 20002 99 - Узбекистан</span></li>
@@ -1277,11 +1279,13 @@ const toggleHiddenText = (event) => {
                     восхождения на пик Ленина, следующие три документа должны быть в порядке:
                   </p>
 
-                  <ul class="list-disc list-inside pl-[20px] text-[#444] font-light text-[17px] main-font">
+                  <ul
+                    class="list-disc list-inside pl-[20px] text-[#444] font-light text-[17px] main-font"
+                  >
                     <li>
                       <span class="pl-[20px]"
-                        ><b>Виза в Кыргызстан</b>. Большинству въезжающих она не нужна, но лучше заранее
-                        проверить это здесь.
+                        ><b>Виза в Кыргызстан</b>. Большинству въезжающих она не нужна, но лучше
+                        заранее проверить это здесь.
                       </span>
                     </li>
                     <li>
@@ -1294,8 +1298,8 @@ const toggleHiddenText = (event) => {
                     </li>
                     <li>
                       <span class="pl-[20px]"
-                        ><b>Пропуск в зону пограничного контроля (ЗПК)</b> - специальное разрешение для
-                        посещения района пика Ленина, которое необходимо оформить каждому без
+                        ><b>Пропуск в зону пограничного контроля (ЗПК)</b> - специальное разрешение
+                        для посещения района пика Ленина, которое необходимо оформить каждому без
                         исключений, независимо от гражданства. Если вы едете на Ленина с нами, то
                         пропуск мы вам оформим.</span
                       >
@@ -1304,7 +1308,1023 @@ const toggleHiddenText = (event) => {
                 </div>
               </div>
 
-              
+              <div class="mt-[50px] flex gap-[20px] items-center">
+                <img src="/images/info/money.png" />
+
+                <p class="text-[17px] font-bold main-font text-[#444]">Деньги и оплата</p>
+              </div>
+
+              <div
+                class="mt-[25px] py-[18px] border-t-2 border-b-1 border-[#9d9d9d] overflow-hidden"
+              >
+                <button
+                  class="flex justify-between text-[#444] text-[17px] max-lp:text-[16px] font-semibold items-center main-font w-full cursor-pointer"
+                  @click="toggleHiddenText"
+                >
+                  <div class="text text-left">8. Когда и как производить оплату за тур?</div>
+
+                  <div class="relative transform transition-all">
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2"
+                    ></div>
+
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2 rotate-90"
+                    ></div>
+                  </div>
+                </button>
+
+                <div class="hidden anim">
+                  <p class="mt-[25px] text-[17px] main-font font-light text-[#444]">
+                    Порядок оплаты программы:
+                  </p>
+
+                  <ul
+                    class="list-disc list-inside pl-[20px] text-[#444] font-light text-[17px] main-font"
+                  >
+                    <li>
+                      <span class="pl-[20px]"
+                        ><b>Предоплату в размере 30%-50%</b> от стоимости выбранного пакета
+                        необходимо осуществить не позднее чем за 1 месяц до старта сезона (до конца
+                        мая). Копию платёжного поручения нужно будет выслать нам в электронном виде.
+                        После этого заявка на участие в программе восхождения на пик Ленина
+                        считается принятой.
+                      </span>
+                    </li>
+                    <li>
+                      <span class="pl-[20px]">
+                        <b>За 2 недели до даты прибытия</b> нужно подтвердить своё участие в
+                        программе и осуществить оплату остальной части стоимости выбранного пакета.
+                        Копию платёжного поручения мы также попросим прислать нам в электронном
+                        виде.
+                      </span>
+                    </li>
+                    <li>
+                      <span class="pl-[20px]">
+                        В некоторых случаях возможна частичная <b>оплата за тур по прибытию</b> в
+                        Ош.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="py-[18px] border-t-1 border-b-1 border-[#9d9d9d] overflow-hidden">
+                <button
+                  class="flex justify-between text-[#444] text-[17px] max-lp:text-[16px] font-semibold items-center main-font w-full cursor-pointer"
+                  @click="toggleHiddenText"
+                >
+                  <div class="text text-left">9. Предоставляются ли какие-либо скидки?</div>
+
+                  <div class="relative transform transition-all">
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2"
+                    ></div>
+
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2 rotate-90"
+                    ></div>
+                  </div>
+                </button>
+
+                <div class="hidden anim">
+                  <p class="mt-[25px] text-[17px] main-font font-light text-[#444]">
+                    Да, предоставляются. Все вопросы относительно возможных скидок оговариваются в
+                    индивидуальном порядке в ходе предварительной переписки.
+                  </p>
+                </div>
+              </div>
+
+              <div class="py-[18px] border-t-1 border-b-1 border-[#9d9d9d] overflow-hidden">
+                <button
+                  class="flex justify-between text-[#444] text-[17px] max-lp:text-[16px] font-semibold items-center main-font w-full cursor-pointer"
+                  @click="toggleHiddenText"
+                >
+                  <div class="text text-left">10. Какая валюта в ходу на пике Ленина?</div>
+
+                  <div class="relative transform transition-all">
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2"
+                    ></div>
+
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2 rotate-90"
+                    ></div>
+                  </div>
+                </button>
+
+                <div class="hidden anim">
+                  <p class="mt-[25px] text-[17px] main-font font-light text-[#444]">
+                    В лагерях пика Ленина принимаются <b>доллары США, Евро</b>, российские
+                    <b>рубли</b> и киргизские <b>сомы</b>. Предпочтение отдаётся долларам США.
+                    Просим учесть, что в Киргизии принимаются к обмену только новые купюры, изданные
+                    не ранее 2000 года, без надписей, заломов и других повреждений.
+                  </p>
+                </div>
+              </div>
+
+              <div class="py-[18px] border-t-1 border-b-1 border-[#9d9d9d] overflow-hidden">
+                <button
+                  class="flex justify-between text-[#444] text-[17px] max-lp:text-[16px] font-semibold items-center main-font w-full cursor-pointer"
+                  @click="toggleHiddenText"
+                >
+                  <div class="text text-left">
+                    11. Можно пользоваться банковской картой или обязательно иметь наличные деньги?
+                  </div>
+
+                  <div class="relative transform transition-all">
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2"
+                    ></div>
+
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2 rotate-90"
+                    ></div>
+                  </div>
+                </button>
+
+                <div class="hidden anim">
+                  <ul
+                    class="mt-[25px] text-[17px] main-font font-light text-[#444] pl-[20px] list-inside list-disc"
+                  >
+                    <li>
+                      <span
+                        >В <b>лагерях пика Ленина</b> принимаются только наличные (доллары США,
+                        Евро, российские рубли и киргизские сомы).
+                      </span>
+                    </li>
+                    <li>
+                      <span
+                        >В <b>Бишкеке и Оше</b> банковскими картами (Visa, Mastercard) можно
+                        расплатиться только в крупных супермаркетах и отелях, тогда как на рынках и
+                        в небольших магазинах принимаются только наличные (киргизские сомы). При
+                        себе лучше иметь достаточное количество наличных денег.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="py-[18px] border-t-1 border-b-1 border-[#9d9d9d] overflow-hidden">
+                <button
+                  class="flex justify-between text-[#444] text-[17px] max-lp:text-[16px] font-semibold items-center main-font w-full cursor-pointer"
+                  @click="toggleHiddenText"
+                >
+                  <div class="text text-left">
+                    12. Сколько наличных денег нужно иметь с собой на всякий случай?
+                  </div>
+
+                  <div class="relative transform transition-all">
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2"
+                    ></div>
+
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2 rotate-90"
+                    ></div>
+                  </div>
+                </button>
+
+                <div class="hidden anim">
+                  <p class="mt-[25px] text-[17px] main-font font-light text-[#444]">
+                    Наличные деньги на территории Базового Лагеря вам могут понадобиться, если вы
+                    захотите посетить мини-маркет или воспользоваться дополнительными услугами, не
+                    включенными в стоимость вашего пакета (скоростной интернет, незапланированная
+                    аренда снаряжения, услуги портеров, дополнительная ночь в Базовом лагере,
+                    сувениры, напитки и т.д.). Здесь вы можете посмотреть стоимость всех
+                    дополнительных услуг, чтобы определиться, какая сумма лично вам может
+                    понадобиться во время восхождения.
+                  </p>
+                </div>
+              </div>
+
+              <div class="py-[18px] border-t-1 border-b-2 border-[#9d9d9d] overflow-hidden">
+                <button
+                  class="flex justify-between text-[#444] text-[17px] max-lp:text-[16px] font-semibold items-center main-font w-full cursor-pointer"
+                  @click="toggleHiddenText"
+                >
+                  <div class="text text-left">
+                    13. Можно ли на месте договориться с портерами о переноске моего личного груза?
+                  </div>
+
+                  <div class="relative transform transition-all">
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2"
+                    ></div>
+
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2 rotate-90"
+                    ></div>
+                  </div>
+                </button>
+
+                <div class="hidden anim">
+                  <p class="mt-[25px] text-[17px] main-font font-light text-[#444]">
+                    Да, можно. Подобные вопросы следует решать при участии коменданта Лагеря,
+                    который проконтролирует работу своих подопечных, будет гарантировать сохранность
+                    вашего груза и цивилизованное решение всех вопросов в случаях возникновения
+                    разногласий.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-[50px] flex gap-[20px] items-center">
+                <img src="/images/info/trans.png" />
+
+                <p class="text-[17px] main-font font-bold text-[#444]">
+                  Организационные моменты и транспорт
+                </p>
+              </div>
+
+              <div
+                class="mt-[25px] py-[18px] border-t-2 border-b-1 border-[#9d9d9d] overflow-hidden"
+              >
+                <button
+                  class="flex justify-between text-[#444] text-[17px] max-lp:text-[16px] font-semibold items-center main-font w-full cursor-pointer"
+                  @click="toggleHiddenText"
+                >
+                  <div class="text text-left">14. Откуда начинается программа?</div>
+
+                  <div class="relative transform transition-all">
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2"
+                    ></div>
+
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2 rotate-90"
+                    ></div>
+                  </div>
+                </button>
+
+                <div class="hidden anim">
+                  <p class="mt-[25px] text-[17px] main-font font-light text-[#444]">
+                    Программа начинается в городе <b>Ош</b> на юге Киргизии. Здесь вас будет ожидать
+                    автотранспорт, на котором вы доберетесь до Базового лагеря пика Ленина примерно
+                    за 5 ч.
+                  </p>
+
+                  <p class="mt-[25px] text-[17px] main-font font-light text-[#444]">
+                    Если из вашего города нет прямых авиарейсов до Оша, то мы можем предложить
+                    <b>2 альтернативных варианта заезда</b>:
+                  </p>
+
+                  <ul
+                    class="list-disc list-inside text-[17px] text-[#444] main-font pl-[20px] mt-[25px]"
+                  >
+                    <li><b>Через Ташкент</b> (Узбекистан) и далее автотранспортом до Оша.</li>
+                    <li><b>Через Бишкек</b> (Киргизия) и далее авиаперелетом в Ош.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="py-[18px] border-t-1 border-b-1 border-[#9d9d9d] overflow-hidden">
+                <button
+                  class="flex justify-between text-[#444] text-[17px] max-lp:text-[16px] font-semibold items-center main-font w-full cursor-pointer"
+                  @click="toggleHiddenText"
+                >
+                  <div class="text text-left">
+                    15. Где нас встретят? Как мы попадем в район пика Ленина, на каком транспорте?
+                  </div>
+
+                  <div class="relative transform transition-all">
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2"
+                    ></div>
+
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2 rotate-90"
+                    ></div>
+                  </div>
+                </button>
+
+                <div class="hidden anim">
+                  <p class="mt-[25px] text-[17px] main-font font-light text-[#444]">
+                    Вас встретят наши представители в аэропорту Оша (Ташкента /Бишкека), проводят до
+                    транспорта и окажут необходимое содействие при возникновении любых вопросов.
+                  </p>
+
+                  <p class="mt-[25px] text-[17px] main-font font-light text-[#444]">
+                    Переезд <b>Ош - Базовый лагерь</b> (время в пути – 5-6 часов) мы организуем на
+                    <b>комфортабельном автотранспорте</b> (спринтер/ джип в зависимости от
+                    количества человек) в любые удобные для вас даты в период функционирования
+                    Базовых лагерей.
+                  </p>
+
+                  <p class="mt-[25px] text-[17px] main-font font-light text-[#444]">
+                    Подробнее о том, как добраться до пика Ленина.
+                  </p>
+                </div>
+              </div>
+
+              <div class="py-[18px] border-t-1 border-b-2 border-[#9d9d9d] overflow-hidden">
+                <button
+                  class="flex justify-between text-[#444] text-[17px] max-lp:text-[16px] font-semibold items-center main-font w-full cursor-pointer"
+                  @click="toggleHiddenText"
+                >
+                  <div class="text text-left">
+                    16. Как быть, если мне понадобится уехать из Базового лагеря раньше/позже
+                    запланированного срока?
+                  </div>
+
+                  <div class="relative transform transition-all">
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2"
+                    ></div>
+
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2 rotate-90"
+                    ></div>
+                  </div>
+                </button>
+
+                <div class="hidden anim">
+                  <p class="mt-[25px] text-[17px] main-font font-light text-[#444]">
+                    При посадке на транспорт, отправляющийся из Базового лагеря в Ош, приоритет
+                    отдаётся тем участникам, которые <b>заранее забронировали данную дату</b> для
+                    переезда в Анкете-заявке.
+                  </p>
+
+                  <p class="mt-[25px] text-[17px] main-font font-light text-[#444]">
+                    Если во время программы у вас возникла необходимость изменить запланированные
+                    даты переезда из Базового лагеря в Ош, следует как можно скорее обсудить этот
+                    вопрос с комендантом Базового лагеря. Комендант внесет корректировки в график и,
+                    если есть свободные места в транспорте на нужную дату, подтвердит вам изменение
+                    дня переезда. Или предложит ближайшую возможную дату переезда, где имеются
+                    свободные места.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-[50px] flex gap-[20px] items-center">
+                <img src="/images/info/group.png" />
+
+                <p class="text-[17px] main-font font-bold text-[#444]">Групповой тур</p>
+              </div>
+
+              <div
+                class="py-[18px] border-t-2 border-b-1 mt-[25px] border-[#9d9d9d] overflow-hidden"
+              >
+                <button
+                  class="flex justify-between text-[#444] text-[17px] max-lp:text-[16px] font-semibold items-center main-font w-full cursor-pointer"
+                  @click="toggleHiddenText"
+                >
+                  <div class="text text-left">
+                    17. Какое количество участников в группе обычно бывает? Сколько гидов работает с
+                    группой?
+                  </div>
+
+                  <div class="relative transform transition-all">
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2"
+                    ></div>
+
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2 rotate-90"
+                    ></div>
+                  </div>
+                </button>
+
+                <div class="hidden anim">
+                  <p class="mt-[25px] text-[17px] main-font font-light text-[#444]">
+                    Обычно в группу набирается от 2 до 9 человек.
+                  </p>
+
+                  <p class="mt-[25px] text-[17px] main-font font-light text-[#444]">При этом:</p>
+
+                  <ul
+                    class="list-disc list-inside pl-[20px] text-[17px] main-font font-light text-[#444]"
+                  >
+                    <li><span class="pl-[20px]">с группой из 2-3 чел. работает 1 гид;</span></li>
+                    <li><span class="pl-[20px]">с группой из 4-6 чел. работает 2 гида;</span></li>
+                    <li><span class="pl-[20px]">с группой из 7-9 чел. работает 3 гида.</span></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="py-[18px] border-t-1 border-b-1 border-[#9d9d9d] overflow-hidden">
+                <button
+                  class="flex justify-between text-[#444] text-[17px] max-lp:text-[16px] font-semibold items-center main-font w-full cursor-pointer"
+                  @click="toggleHiddenText"
+                >
+                  <div class="text text-left">18. А если группа не набралась?</div>
+
+                  <div class="relative transform transition-all">
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2"
+                    ></div>
+
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2 rotate-90"
+                    ></div>
+                  </div>
+                </button>
+
+                <div class="hidden anim">
+                  <p class="mt-[25px] text-[17px] main-font font-light text-[#444]">
+                    Такого не бывает. Все наши восхождения состоятся даже при условии одного
+                    бронирования. Смело покупайте билеты.
+                  </p>
+                </div>
+              </div>
+
+              <div class="py-[18px] border-t-1 border-b-2 border-[#9d9d9d] overflow-hidden">
+                <button
+                  class="flex justify-between text-[#444] text-[17px] max-lp:text-[16px] font-semibold items-center main-font w-full cursor-pointer"
+                  @click="toggleHiddenText"
+                >
+                  <div class="text text-left">
+                    19. Что будет, если кто-то из группы не сможет продолжить восхождение?
+                  </div>
+
+                  <div class="relative transform transition-all">
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2"
+                    ></div>
+
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2 rotate-90"
+                    ></div>
+                  </div>
+                </button>
+
+                <div class="hidden anim">
+                  <p class="mt-[25px] text-[17px] main-font font-light text-[#444]">
+                    С группой работает несколько гидов. Поэтому если кто-либо из участников не
+                    сможет или не захочет продолжить восхождение, один из гидов спустит его в
+                    Базовый Лагерь. Помимо гидов, работающих непосредственно с группой, у нас в
+                    Лагере 1, Лагере 2 и Лагере 3 на постоянной основе находятся дежурные гиды,
+                    которые всегда готовы прийти на помощь нашим гостям.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-[50px] flex gap-[20px] items-center">
+                <img src="/images/info/food.png" />
+
+                <p class="text-[17px] main-font font-bold text-[#444]">Питание и здоровье</p>
+              </div>
+
+              <div
+                class="py-[18px] border-t-2 border-b-1 mt-[25px] border-[#9d9d9d] overflow-hidden"
+              >
+                <button
+                  class="flex justify-between text-[#444] text-[17px] max-lp:text-[16px] font-semibold items-center main-font w-full cursor-pointer"
+                  @click="toggleHiddenText"
+                >
+                  <div class="text text-left">
+                    20. Как мы будем питаться на каждом этапе восхождения?
+                  </div>
+
+                  <div class="relative transform transition-all">
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2"
+                    ></div>
+
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2 rotate-90"
+                    ></div>
+                  </div>
+                </button>
+
+                <div class="hidden anim">
+                  <ul
+                    class="mt-[25px] list-disc list-inside pl-[20px] text-[17px] main-font font-light text-[#444]"
+                  >
+                    <li>
+                      <span class="pl-[20px]"
+                        ><b>Города</b>. При размещении в гостинице по прибытии и убытии в стоимость
+                        включен завтрак. Обеды и ужины в городах не включены.
+                      </span>
+                    </li>
+                    <li>
+                      <span class="pl-[20px]"
+                        ><b>Переезд Ош</b> – Базовый Лагерь – Ош: каждому участнику мы предоставляем
+                        ланчбокс.
+                      </span>
+                    </li>
+                    <li>
+                      <span class="pl-[20px]"
+                        ><b>Базовый лагерь</b> (3600 м) и <b>Лагерь 1</b> (4400 м): полный пансион –
+                        вкусное и разнообразное горячее трехразовое питание от профессиональных
+                        поваров включено во все пакеты (кроме «Супер-Эконом»; в пакете «Эконом»
+                        включено питание только в Базовом лагере). Есть вегетарианские блюда,
+                        возможно индивидуальное питание. Подробнее о меню в Базовых лагерях.
+                      </span>
+                    </li>
+                    <li>
+                      <span class="pl-[20px]">
+                        Высотные <b>Лагерь 2</b> (5300 м) и <b>Лагерь 3</b> (6100 м): готовить пищу
+                        вы будете самостоятельно из тех продуктов, которые привезете с собой или
+                        возьмете/приобретете в Базовом лагере. Для участников, приехавших по пакетам
+                        «Бизнес», «Бизнес Плюс», «Групповой» и «VIP» мы бесплатно предоставляем
+                        фиксированный набор продуктов для восхождения со склада Базового лагеря. Для
+                        пакета «VIP» - приготовление пищи в Лагере 2 и Лагере 3 включено в
+                        стоимость.
+                      </span>
+                    </li>
+                  </ul>
+
+                  <p class="mt-[25px] text-[17px] text-[#444] main-font font-light">
+                    Фиксированный набор продуктов включает супы и каши быстрого приготовления,
+                    тушёнку, рыбные консервы, колбасу, сыр, крупы, макаронные изделия, сгущёнку,
+                    шоколад, шоколадные батончики, конфеты, сухофрукты, орехи, чай, кофе, сахар,
+                    печенье, хлеб (в том числе, свежие лепёшки), свежие овощи и фрукты и пр.
+                  </p>
+
+                  <p class="mt-[25px] text-[17px] text-[#444] main-font font-light">
+                    Дополнительные специализированные продукты для восхождения (сублимированные
+                    продукты, изотоники и т.д.) всегда можно приобрести в
+                    <b>мини-маркете на территории Базового лагеря</b>.
+                  </p>
+                </div>
+              </div>
+
+              <div class="py-[18px] border-t-1 border-b-1 border-[#9d9d9d] overflow-hidden">
+                <button
+                  class="flex justify-between text-[#444] text-[17px] max-lp:text-[16px] font-semibold items-center main-font w-full cursor-pointer"
+                  @click="toggleHiddenText"
+                >
+                  <div class="text text-left">
+                    21. Как обстоят дела с водой? Можно ли пить воду из горных ручьев?
+                  </div>
+
+                  <div class="relative transform transition-all">
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2"
+                    ></div>
+
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2 rotate-90"
+                    ></div>
+                  </div>
+                </button>
+
+                <div class="hidden anim">
+                  <ul
+                    class="mt-[25px] pl-[20px] list-disc list-inside text-[17px] text-[#444] main-font font-light"
+                  >
+                    <li>
+                      <span class="pl-[20px]"
+                        ><b>В городах</b> следует пить только бутилированную воду.
+                      </span>
+                    </li>
+                    <li>
+                      <span class="pl-[20px]"
+                        ><b>В Базовом лагере и Лагере 1</b> можно брать бесплатную кипяченую воду в
+                        юртах-столовых, либо пить бутилированную воду.
+                      </span>
+                    </li>
+                    <li>
+                      <span class="pl-[20px]"
+                        ><b>Выше Лагеря 1</b> (4400 м) можно брать воду из горных ручьев, но пить ее
+                        лучше только после кипячения.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="py-[18px] border-t-1 border-b-1 border-[#9d9d9d] overflow-hidden">
+                <button
+                  class="flex justify-between text-[#444] text-[17px] max-lp:text-[16px] font-semibold items-center main-font w-full cursor-pointer"
+                  @click="toggleHiddenText"
+                >
+                  <div class="text text-left w-[90%]">
+                    22. Возможно ли в Оше перед переездом в Базовый Лагерь закупить продукты для
+                    восхождения? Есть ли в районе пика Ленина магазин, где можно купить товары
+                    первой необходимости?
+                  </div>
+
+                  <div class="relative transform transition-all">
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2"
+                    ></div>
+
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2 rotate-90"
+                    ></div>
+                  </div>
+                </button>
+
+                <div class="hidden anim">
+                  <p class="mt-[25px] text-[17px] main-font font-light text-[#444]">
+                    Да. Вы сможете закупить необходимые продукты на Ошском базаре или в одном из
+                    супермаркетов в день прибытия в Ош или прямо перед выездом в Базовый лагерь.
+                  </p>
+
+                  <p class="mt-[25px] text-[17px] main-font font-light text-[#444]">
+                    На территории нашего Базового лагеря (3600 м) функционирует <b>мини-маркет</b>,
+                    где можно приобрести товары первой необходимости, предметы гигиены,
+                    специализированные продукты для восхождения (сублиматы, изотонические напитки и
+                    т.д.), альпинистское снаряжение и многое другое.
+                  </p>
+                </div>
+              </div>
+
+              <div class="py-[18px] border-t-1 border-b-2 border-[#9d9d9d] overflow-hidden">
+                <button
+                  class="flex justify-between text-[#444] text-[17px] max-lp:text-[16px] font-semibold items-center main-font w-full cursor-pointer"
+                  @click="toggleHiddenText"
+                >
+                  <div class="text text-left">23. Есть ли в Базовом лагере дежурный врач?</div>
+
+                  <div class="relative transform transition-all">
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2"
+                    ></div>
+
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2 rotate-90"
+                    ></div>
+                  </div>
+                </button>
+
+                <div class="hidden anim">
+                  <p class="mt-[25px] text-[17px] main-font font-light text-[#444]">
+                    Да. В Базовом лагере и Лагере 1 есть медпункт и всегда присутствует врач.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-[50px] flex gap-[20px] items-center">
+                <img src="/images/info/camp.png" />
+
+                <p class="text-[17px] main-font font-bold text-[#444]">Проживание</p>
+              </div>
+
+              <div
+                class="py-[18px] mt-[25px] border-t-2 border-b-1 border-[#9d9d9d] overflow-hidden"
+              >
+                <button
+                  class="flex justify-between text-[#444] text-[17px] max-lp:text-[16px] font-semibold items-center main-font w-full cursor-pointer"
+                  @click="toggleHiddenText"
+                >
+                  <div class="text text-left w-[90%]">
+                    24. Где мы будем жить на каждом этапе восхождения?
+                  </div>
+
+                  <div class="relative transform transition-all">
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2"
+                    ></div>
+
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2 rotate-90"
+                    ></div>
+                  </div>
+                </button>
+
+                <div class="hidden anim">
+                  <ul
+                    class="mt-[25px] text-[17px] main-font font-light text-[#444] pl-[20px] list-disc list-inside"
+                  >
+                    <li>
+                      <span class="pl-[20px]"
+                        ><b>Города</b>: размещение в гостиницах в двухместных номерах с завтраком.
+                      </span>
+                    </li>
+                    <li>
+                      <span class="pl-[20px]"
+                        ><b>Базовый лагерь</b> (3600 м): размещение в отапливаемых кемпинговых
+                        палатках по 2 человека. Кемпинговые палатки оснащены электричеством
+                        (розетками, индивидуальными обогревателями, освещением), раскладными
+                        кроватями, матрасами, одеялами, подушками, сменным постельным бельём,
+                        стульями. Подробнее об инфраструктуре Базового лагеря можно почитать здесь.
+                      </span>
+                    </li>
+                    <li>
+                      <span class="pl-[20px]">
+                        <b>Лагерь 1</b> (4400 м): размещение в кемпинговых палатках по 2 человека.
+                        Палатки оснащены деревянными настилами, теплоизоляцией, поролоновыми
+                        матрасами. Подробнее об инфраструктуре Лагеря 1 можно почитать здесь.
+                      </span>
+                    </li>
+                    <li>
+                      <span class="pl-[20px]"
+                        >Высотные <b>Лагерь 2</b> (5300 м) и <b>Лагерь 3</b> (6100 м): размещение в
+                        заранее установленных высотных палатках (в зависимости от выбранного
+                        пакета).
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="py-[18px] border-t-1 border-b-2 border-[#9d9d9d] overflow-hidden">
+                <button
+                  class="flex justify-between text-[#444] text-[17px] max-lp:text-[16px] font-semibold items-center main-font w-full cursor-pointer"
+                  @click="toggleHiddenText"
+                >
+                  <div class="text text-left">25. Есть ли место для хранения вещей?</div>
+
+                  <div class="relative transform transition-all">
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2"
+                    ></div>
+
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2 rotate-90"
+                    ></div>
+                  </div>
+                </button>
+
+                <div class="hidden anim">
+                  <p class="mt-[25px] text-[17px] main-font font-light text-[#444]">
+                    Да, в Базовом лагере и Лагере 1 имеются <b>камеры хранения</b>. Перед выходом из
+                    Базового лагеря (Лагеря 1) сдайте вещи, которые вы не берете с собой, в камеру
+                    хранения – только в этом случае мы можем гарантировать их сохранность. Не
+                    забывайте свои личные вещи и снаряжение в палатках и юртах.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-[50px] flex gap-[20px] items-center">
+                <img src="/images/info/wi-fi.png" />
+
+                <p class="main-font text-[18px] font-bold text-[#444]">
+                  Интернет, мобильная связь, гаджеты
+                </p>
+              </div>
+
+              <div
+                class="py-[18px] border-t-2 border-b-1 mt-[25px] border-[#9d9d9d] overflow-hidden"
+              >
+                <button
+                  class="flex justify-between text-[#444] text-[17px] max-lp:text-[16px] font-semibold items-center main-font w-full cursor-pointer"
+                  @click="toggleHiddenText"
+                >
+                  <div class="text text-left">
+                    26. Какую местную симку лучше приобрести, чтобы хорошо работал мобильный
+                    интернет под пиком Ленина?
+                  </div>
+
+                  <div class="relative transform transition-all">
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2"
+                    ></div>
+
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2 rotate-90"
+                    ></div>
+                  </div>
+                </button>
+
+                <div class="hidden anim">
+                  <p class="mt-[25px] text-[17px] main-font font-light text-[#444]">
+                    В Киргизии услуги сотовой связи и мобильного интернета предоставляют три
+                    популярных оператора:
+                  </p>
+
+                  <ul
+                    class="list-disc list-inside pl-[20px] text-[17px] main-font font-light text-[#444]"
+                  >
+                    <li>
+                      <span class="pl-[20px]">«Мегаком» </span>
+                    </li>
+                    <li>
+                      <span class="pl-[20px]">«Beeline» </span>
+                    </li>
+                    <li>
+                      <span class="pl-[20px]">«О» </span>
+                    </li>
+                  </ul>
+
+                  <p class="mt-[25px] text-[17px] text-[#444] main-font font-light">
+                    Все они примерно одинаково работают в горах. 3G в районе Базового Лагеря (3600
+                    м) ловит, но не стабильно. Чем выше поднимаетесь, тем более нестабильная связь.
+                  </p>
+                </div>
+              </div>
+
+              <div class="py-[18px] border-t-1 border-b-1 border-[#9d9d9d] overflow-hidden">
+                <button
+                  class="flex justify-between text-[#444] text-[17px] max-lp:text-[16px] font-semibold items-center main-font w-full cursor-pointer"
+                  @click="toggleHiddenText"
+                >
+                  <div class="text text-left">27. Есть ли Wi-Fi интернет в Базовых лагерях?</div>
+
+                  <div class="relative transform transition-all">
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2"
+                    ></div>
+
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2 rotate-90"
+                    ></div>
+                  </div>
+                </button>
+
+                <div class="hidden anim">
+                  <p class="mt-[25px] text-[17px] main-font font-light text-[#444]">
+                    Да, стабильный высокоскоростной Wi-Fi есть и в Базовом лагере (3600 м), и в
+                    Лагере 1 (4400 м). Услуги высокоскоростного интернета включены в стоимость
+                    пакетов – “VIP” и «Бизнес-Плюс». Для остальных гостей стоимость пользования
+                    Wi-Fi в Базовом лагере и Лагере 1 составляет 15$ / 300 Mб.
+                  </p>
+                </div>
+              </div>
+
+              <div class="py-[18px] border-t-1 border-b-2 border-[#9d9d9d] overflow-hidden">
+                <button
+                  class="flex justify-between text-[#444] text-[17px] max-lp:text-[16px] font-semibold items-center main-font w-full cursor-pointer"
+                  @click="toggleHiddenText"
+                >
+                  <div class="text text-left">
+                    28. Где я смогу заряжать свои гаджеты во время восхождения?
+                  </div>
+
+                  <div class="relative transform transition-all">
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2"
+                    ></div>
+
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2 rotate-90"
+                    ></div>
+                  </div>
+                </button>
+
+                <div class="hidden anim">
+                  <ul
+                    class="mt-[25px] list-disc list-inside pl-[20px] text-[17px] main-font font-light text-[#444]"
+                  >
+                    <li>
+                      <span class="pl-[20px]"
+                        >В <b>Базовом лагере</b> розетки есть в каждой палатке, вы сможете свободно
+                        заряжаться в любое время суток.
+                      </span>
+                    </li>
+                    <li>
+                      <span class="pl-[20px]"
+                        >В <b>Лагере 1</b> зарядить гаджеты можно в наших юртах в вечернее время (с
+                        18:00 до 22:00).
+                      </span>
+                    </li>
+                    <li>
+                      <span class="pl-[20px]">Выше Лагеря 1 электричества нет. </span>
+                    </li>
+                  </ul>
+
+                  <p class="mt-[25px] text-[17px] main-font font-light text-[#444]">
+                    Рекомендуем привезти с собой Power bank (внешний аккумулятор), чтобы иметь
+                    источник энергии в верхних лагерях.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-[50px] flex gap-[20px] items-center">
+                <img src="/images/info/dosug.png" />
+
+                <p class="main-font text-[18px] font-bold text-[#444]">Досуг</p>
+              </div>
+
+              <div
+                class="py-[18px] border-t-2 border-b-1 mt-[25px] border-[#9d9d9d] overflow-hidden"
+              >
+                <button
+                  class="flex justify-between text-[#444] text-[17px] max-lp:text-[16px] font-semibold items-center main-font w-full cursor-pointer"
+                  @click="toggleHiddenText"
+                >
+                  <div class="text text-left">
+                    29. Что интересного есть в окрестностях Базового лагеря?
+                  </div>
+
+                  <div class="relative transform transition-all">
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2"
+                    ></div>
+
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2 rotate-90"
+                    ></div>
+                  </div>
+                </button>
+
+                <div class="hidden anim">
+                  <ul
+                    class="mt-[25px] list-disc list-inside pl-[20px] text-[17px] main-font font-light text-[#444]"
+                  >
+                    <li>
+                      <span class="pl-[20px]"
+                        ><b>Поляна эдельвейсов</b> (3600 м), где расположен Базовый Лагерь, названа
+                        так не случайно. В период цветения эдельвейсов это место становится самым
+                        притягательным в округе.
+                      </span>
+                    </li>
+                    <li>
+                      <span class="pl-[20px]"
+                        ><b>Луковая поляна</b> (3 800 м) – там растет дикий лук-порей и в большом
+                        количестве обитают сурки.</span
+                      >
+                    </li>
+                    <li>
+                      <span class="pl-[20px]"
+                        >Многочисленные <b>озера</b> по долине реки Ачик-Таш.</span
+                      >
+                    </li>
+                    <li>
+                      <span class="pl-[20px]"
+                        ><b>Юрты местных жителей</b>, где можно познакомиться с бытом, традициями и
+                        образом жизни горных кочевников, а также отведать кумыс – национальный
+                        кисломолочный напиток кыргызов.</span
+                      >
+                    </li>
+                    <li>
+                      <span class="pl-[20px]"
+                        ><b>Водопад</b> на пути к перевалу Путешественников.
+                      </span>
+                    </li>
+                    <li>
+                      <span class="pl-[20px]"
+                        ><b>Пик Петровского</b> (4 730 м). Подъем технически не сложный и доставит
+                        массу приятных эмоций любителям живописных пейзажей и фотографии.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="py-[18px] border-t-1 border-b-2 border-[#9d9d9d] overflow-hidden">
+                <button
+                  class="flex justify-between text-[#444] text-[17px] max-lp:text-[16px] font-semibold items-center main-font w-full cursor-pointer"
+                  @click="toggleHiddenText"
+                >
+                  <div class="text text-left">30. Чем заняться в Оше, если осталось время?</div>
+
+                  <div class="relative transform transition-all">
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2"
+                    ></div>
+
+                    <div
+                      class="w-[12px] h-[1px] bg-[#444] transform transition-all duration-200 ease-in absolute top-1/2 right-1/2 rotate-90"
+                    ></div>
+                  </div>
+                </button>
+
+                <div class="hidden anim">
+                  <p class="mt-[25px] text-[17px] main-font font-light text-[#444]">
+                    <b>Ош</b> (его называют «Южная столица») - самый большой город на юге
+                    <b>Кыргызстана</b> и один из древних пунктов Великого Шелкового пути. В Оше вас
+                    встретят добродушные и гостеприимные люди, оживлённые зелёные улицы со
+                    множеством уютных кафешек.
+                  </p>
+
+                  <h3 class="mt-[25px] text-[20px] main-font font-semibold text-[#444]">
+                    Что посмотреть в Оше:
+                  </h3>
+
+                  <ul
+                    class="mt-[25px] list-disc list-inside pl-[20px] text-[17px] main-font font-light text-[#444]"
+                  >
+                    <li>
+                      <span class="pl-[20px]"
+                        >Национальный
+                        <b>историко-археологический музейный комплекс «Сулайман-Тоо»</b> - главная
+                        достопримечательность города, единственный в Киргизии объект, включенный в
+                        список ЮНЕСКО. Пятиглавая <b>Сулейман-Гора</b> - один из отрогов Алайского
+                        хребта, представляющий собой скалу высотой более 100 метров. Гора эта
+                        возвышается прямо посреди городка и тем эффектнее смотрится на фоне
+                        оживленной городской жизни, напоминая о непосредственной близости ее
+                        величественных собратьев - гор Памира. С вершины Сулейман-горы открывается
+                        <b>превосходная панорама</b>: внизу - кипящая городская жизнь, вдали -
+                        дышащие спокойствием и уверенностью высокие горы. На одной из вершин горы
+                        находится знаменитый <b>домик Бабура</b>. У подножия, в <b>пещере</b>,
+                        расположен <b>Краеведческий музей</b>, где представлена уникальная коллекция
+                        исторических и культурных ценностей.
+                      </span>
+                    </li>
+                    <li>
+                      <span class="pl-[20px]"
+                        ><b>Новая мечеть «Сулейман-Тоо»</b> – самая крупная в стране.
+                      </span>
+                    </li>
+                    <li>
+                      <span class="pl-[20px]">Колоритный <b>восточный базар</b>. </span>
+                    </li>
+                    <li>
+                      <span class="pl-[20px]">Мемориальный комплекс <b>«Вечный огонь»</b>. </span>
+                    </li>
+                    <li>
+                      <span class="pl-[20px]">Монументальный комплекс <b>«Манас»</b> </span>
+                    </li>
+                    <li>
+                      <span class="pl-[20px]">Михайло-Архангельская церковь. </span>
+                    </li>
+                    <li>
+                      <span class="pl-[20px]"
+                        ><b>Памятник Ленину</b> – самый большой в Средней Азии (высота – 25 м).
+                      </span>
+                    </li>
+                    <li>
+                      <span class="pl-[20px]">Памятник Алымбек-датки. </span>
+                    </li>
+                    <li>
+                      <span class="pl-[20px]">Памятник Курманжан-датки.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </transition>
 
