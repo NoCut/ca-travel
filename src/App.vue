@@ -1,8 +1,9 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import HeaderPanel from './components/HeaderPanel.vue'
 import FooterPanel from './components/FooterPanel.vue';
 import HeaderMobile from './components/HeaderMobile.vue';
+import SecondMenu from './components/SecondMenu.vue';
 import { ref, onMounted } from 'vue';
 
 const supportedLangs = ['ru', 'en', 'es', 'fr', 'de']
@@ -20,13 +21,14 @@ const getSystemLang = () => {
 const userWidth = ref(window.innerWidth);
 
 onMounted(() => {
-  console.log(getSystemLang());
+  sessionStorage.setItem("selectedLanguage", getSystemLang());
 })
 </script>
 
 <template>
   <HeaderPanel class="hidden tb:block" v-if="userWidth > 1025"/>
   <HeaderMobile class="block tb:hidden" v-else />
+  <SecondMenu />
 
   <RouterView />
 

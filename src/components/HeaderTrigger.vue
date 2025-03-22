@@ -4,7 +4,9 @@ import { useRoute } from 'vue-router'
 
 const currentRoute = useRoute()
 
-const toggleMenu = (event) => {
+const notAllowedPages = ['home', 'tours']
+
+const toggleMenu = () => {
   console.log(document.documentElement.clientWidth)
   if (document.documentElement.clientWidth > 1024) {
     document.querySelector('#header').classList.toggle('translate-y-[-100%]')
@@ -13,6 +15,12 @@ const toggleMenu = (event) => {
   }
   document.querySelector('#header-mobile').classList.remove('translate-y-[-100%]')
   document.querySelector('body').classList.add('overflow-y-hidden')
+}
+
+const toggleSecondMenu = () => {
+  console.log(document.documentElement.clientWidth)
+  document.querySelector('#second-menu').classList.toggle('translate-y-[-100%]')
+  document.querySelector('body').classList.toggle('overflow-y-hidden')
 }
 </script>
 
@@ -26,7 +34,7 @@ const toggleMenu = (event) => {
         >
       </button>
 
-      <button class="border-0" v-if="currentRoute.name !== 'home'">
+      <button class="border-0" v-if="!notAllowedPages.includes(currentRoute.name)" @click="toggleSecondMenu">
         <img src="/images/second-menu.png" />
       </button>
     </div>

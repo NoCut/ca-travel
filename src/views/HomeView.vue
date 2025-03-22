@@ -45,7 +45,7 @@ const isMobile = ref(window.innerWidth < 1025)
           </div>
 
           <div class="flex flex-col justify-center items-center max-mb:hidden">
-            <div class="text-[15px] font-semibold main-font letter-spacing-[.10em] text-[#444444]">
+            <div class="text-[15px] font-semibold main-font letter-spacing-[.10em] text-[#444]">
               СТРАНА
             </div>
 
@@ -63,7 +63,7 @@ const isMobile = ref(window.innerWidth < 1025)
           </div>
 
           <div class="flex flex-col justify-center items-center max-mb:hidden">
-            <div class="text-[15px] font-semibold main-font text-[#444444]">ТИП ПУТЕШЕСТВИЯ</div>
+            <div class="text-[15px] font-semibold main-font text-[#444]">ТИП ПУТЕШЕСТВИЯ</div>
 
             <div class="text-[12px] main-font text-[#888888]">КАТЕГОРИЯ ТУРА</div>
           </div>

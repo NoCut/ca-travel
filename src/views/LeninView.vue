@@ -1,9 +1,5 @@
 <script setup>
 import HeaderTrigger from '@/components/HeaderTrigger.vue'
-
-import { ref } from 'vue'
-
-const isMobile = ref(window.innerWidth < 1025)
 </script>
 
 <template>

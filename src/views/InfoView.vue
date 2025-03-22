@@ -2328,6 +2328,53 @@ const toggleHiddenText = (event) => {
             </div>
           </transition>
 
+          <transition>
+            <div v-if="currentText === 'maps'" class="mt-[25px]">
+              <h3 class="text-[20px] main-font font-semibold text-[#444]">
+                КАРТЫ РАЙОНА ПИКА ЛЕНИНА И СХЕМЫ МАРШРУТОВ ВОСХОЖДЕНИЙ
+              </h3>
+
+              <div class="mt-[29px] w-[75%] mx-auto">
+                <img class="w-full" src="/images/info/map-1.png" />
+              </div>
+
+              <p class="text-[17px] text-center mt-[28px] main-font text-light text-[#444]">
+                Топографическая карта района
+              </p>
+
+              <div class="mt-[65px] w-[60%] mx-auto">
+                <img class="w-full" src="/images/info/map-2.png" />
+              </div>
+
+              <p class="text-[17px] text-center mt-[28px] main-font text-light text-[#444]">
+                Подробная схема заезда в Базовый лагерь (3600 м) под пиком Ленина компании Central
+                Asia Travel
+              </p>
+
+              <div class="mt-[65px] w-[75%] mx-auto">
+                <img class="w-full" src="/images/info/map-3.png" />
+              </div>
+
+              <p class="text-[17px] text-center mt-[28px] main-font text-light text-[#444]">
+                Маршруты восхождений на пик Ленина (7134 м)
+              </p>
+
+              <div class="flex items-center gap-[10px] mx-auto w-[75%] mt-[73px]">
+                <img src="/icons/download2.png" />
+
+                <div class="text-[#c74e1c] text-[16px] main-font font-semibold">
+                  GPS-трек восхождения на пик Ленина через вершину Раздельная
+                </div>
+              </div>
+
+              <div class="mt-[36px] w-[75%] mx-auto italic main-font text-[15px] text-[#444]">
+                Просим учесть, что в связи с подвижностью ледника, изменением рельефа и появлением
+                новых трещин, тропа между Лагерем 1 (4400м) и Лагерем 2 (5300 м) и соответствующие
+                GPS-точки (GPS-координаты) на этом участке могут год от года меняться
+              </div>
+            </div>
+          </transition>
+
           <div class="mt-[96px] max-tb:mt-[79px] mb-[74px] flex justify-center">
             <div
               class="w-full max-tb:mx-[10px] max-mb:mx-[5px] flex max-lp:flex-col max-lp:gap-[19px] max-lp:items-center justify-between border-1 border-[#888] px-[35px] max-tb:px-[20px] max-mb:px-[8px] py-[22px]"
