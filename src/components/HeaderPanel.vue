@@ -887,7 +887,7 @@ onMounted(() => {
           id="type-select"
           class="flex justify-between items-start transition-all translate-y-[-100%] hidden px-[100px] text-[#444444] pb-[30px] pt-[25px] border-b-2 border-[#b8b6b2] main-font text-[15px] text-center"
         >
-          <RouterLink
+          <router-link
             class="flex flex-col items-ce justify-center hover:text-[#c74e1c] transtion-all cursor-pointer"
             @mouseover="changeImageChange($event, true)"
             @mouseleave="changeImageChange($event, false)"
@@ -901,8 +901,8 @@ onMounted(() => {
               Экскурсионные<br />
               туры
             </div>
-          </RouterLink>
-          <RouterLink
+          </router-link>
+          <router-link
             class="flex flex-col items-center justify-center hover:text-[#c74e1c] transtion-all cursor-pointer"
             @mouseover="changeImageChange($event, true)"
             @mouseleave="changeImageChange($event, false)"
@@ -916,7 +916,7 @@ onMounted(() => {
               Тематические<br />
               туры
             </div>
-          </RouterLink>
+          </router-link>
           <RouterLink
             class="flex flex-col items-center justify-center hover:text-[#c74e1c] transtion-all cursor-pointer"
             @mouseover="changeImageChange($event, true)"
