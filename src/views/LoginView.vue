@@ -11,7 +11,7 @@ const message = ref('')
 const handleLogin = async () => {
   try{
     const data = await auth(login.value, password.value);
-    message.value = "Регистрация успешна! Теперь войдите.";
+    message.value = "Авторизация успешна! Теперь войдите.";
     setTimeout(() => {
       router.push({ name: 'dashboard' })
     }, 1000)

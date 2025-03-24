@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = import.meta.env.API_URL;
+const API_URL = import.meta.env.VITE_API_URL;
 
 const api = axios.create({
   baseURL: API_URL,
@@ -34,7 +34,7 @@ export const register = async (email, password) => {
 // 📌 Логин
 export const auth = async (email, password) => {
   console.log("📨 Отправляем запрос на сервер:", {email, password});
-
+  console.log(api)
   try {
       const response = await api.post("/login",
           {email, password},

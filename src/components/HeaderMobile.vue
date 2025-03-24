@@ -180,16 +180,16 @@ onMounted(() => {
             <transition name="dropdown">
               <div v-if="currentLinksId === 'uz-mob'" class="origin-top">
                 <div class="bg-white flex flex-col gap-[25px] py-[20px] pl-[20px]">
-                  <RouterLink>Туры в Узбекистан</RouterLink>
-                  <RouterLink>Достопримечательности</RouterLink>
-                  <RouterLink>Информация об Узбекистане</RouterLink>
-                  <RouterLink>Виза в Узбекистан</RouterLink>
-                  <RouterLink>Узбекская Кухня</RouterLink>
-                  <RouterLink>Фото Узбекистана</RouterLink>
-                  <RouterLink>Гостиницы Узбекистана</RouterLink>
-                  <RouterLink>Конференц-залы</RouterLink>
-                  <RouterLink>Рестораны</RouterLink>
-                  <RouterLink>Транспортные услуги</RouterLink>
+                  <RouterLink to="#">Туры в Узбекистан</RouterLink>
+                  <RouterLink to="#">Достопримечательности</RouterLink>
+                  <RouterLink to="#">Информация об Узбекистане</RouterLink>
+                  <RouterLink to="#">Виза в Узбекистан</RouterLink>
+                  <RouterLink to="#">Узбекская Кухня</RouterLink>
+                  <RouterLink to="#">Фото Узбекистана</RouterLink>
+                  <RouterLink to="#">Гостиницы Узбекистана</RouterLink>
+                  <RouterLink to="#">Конференц-залы</RouterLink>
+                  <RouterLink to="#">Рестораны</RouterLink>
+                  <RouterLink to="#">Транспортные услуги</RouterLink>
                 </div>
               </div>
             </transition>
@@ -216,16 +216,16 @@ onMounted(() => {
             <transition name="dropdown">
               <div v-if="currentLinksId === 'kg-mob'" class="origin-top">
                 <div class="bg-white flex flex-col gap-[25px] py-[20px] pl-[20px]">
-                  <RouterLink>Туры в Кыргызстан</RouterLink>
-                  <RouterLink>Достопримечательности</RouterLink>
-                  <RouterLink>Информация об Кыргзыстане</RouterLink>
-                  <RouterLink>Виза в Кыргызстан</RouterLink>
-                  <RouterLink>Кыргызская Кухня</RouterLink>
-                  <RouterLink>Фото Кыргызстана</RouterLink>
-                  <RouterLink>Гостиницы Кыргызстана</RouterLink>
-                  <RouterLink>Конференц-залы</RouterLink>
-                  <RouterLink>Рестораны</RouterLink>
-                  <RouterLink>Транспортные услуги</RouterLink>
+                  <RouterLink to="#">Туры в Кыргызстан</RouterLink>
+                  <RouterLink to="#">Достопримечательности</RouterLink>
+                  <RouterLink to="#">Информация об Кыргзыстане</RouterLink>
+                  <RouterLink to="#">Виза в Кыргызстан</RouterLink>
+                  <RouterLink to="#">Кыргызская Кухня</RouterLink>
+                  <RouterLink to="#">Фото Кыргызстана</RouterLink>
+                  <RouterLink to="#">Гостиницы Кыргызстана</RouterLink>
+                  <RouterLink to="#">Конференц-залы</RouterLink>
+                  <RouterLink to="#">Рестораны</RouterLink>
+                  <RouterLink to="#">Транспортные услуги</RouterLink>
                 </div>
               </div>
             </transition>
@@ -252,16 +252,16 @@ onMounted(() => {
             <transition name="dropdown">
               <div v-if="currentLinksId === 'kz-mob'" class="origin-top">
                 <div class="bg-white flex flex-col gap-[25px] py-[20px] pl-[20px]">
-                  <RouterLink>Туры в Казахстан</RouterLink>
-                  <RouterLink>Достопримечательности</RouterLink>
-                  <RouterLink>Информация об Казахстане</RouterLink>
-                  <RouterLink>Виза в Казахстан</RouterLink>
-                  <RouterLink>Казахская Кухня</RouterLink>
-                  <RouterLink>Фото Казахстана</RouterLink>
-                  <RouterLink>Гостиницы Казахстана</RouterLink>
-                  <RouterLink>Конференц-залы</RouterLink>
-                  <RouterLink>Рестораны</RouterLink>
-                  <RouterLink>Транспортные услуги</RouterLink>
+                  <RouterLink to="#">Туры в Казахстан</RouterLink>
+                  <RouterLink to="#">Достопримечательности</RouterLink>
+                  <RouterLink to="#">Информация об Казахстане</RouterLink>
+                  <RouterLink to="#">Виза в Казахстан</RouterLink>
+                  <RouterLink to="#">Казахская Кухня</RouterLink>
+                  <RouterLink to="#">Фото Казахстана</RouterLink>
+                  <RouterLink to="#">Гостиницы Казахстана</RouterLink>
+                  <RouterLink to="#">Конференц-залы</RouterLink>
+                  <RouterLink to="#">Рестораны</RouterLink>
+                  <RouterLink to="#">Транспортные услуги</RouterLink>
                 </div>
               </div>
             </transition>
@@ -288,16 +288,16 @@ onMounted(() => {
             <transition name="dropdown">
               <div v-if="currentLinksId === 'tj-mob'" class="origin-top">
                 <div class="bg-white flex flex-col gap-[25px] py-[20px] pl-[20px]">
-                  <RouterLink>Туры в Таджикистан</RouterLink>
-                  <RouterLink>Достопримечательности</RouterLink>
-                  <RouterLink>Информация об Таджикистане</RouterLink>
-                  <RouterLink>Виза в Таджикистан</RouterLink>
-                  <RouterLink>Таджикская Кухня</RouterLink>
-                  <RouterLink>Фото Таджикистана</RouterLink>
-                  <RouterLink>Гостиницы Таджикистана</RouterLink>
-                  <RouterLink>Конференц-залы</RouterLink>
-                  <RouterLink>Рестораны</RouterLink>
-                  <RouterLink>Транспортные услуги</RouterLink>
+                  <RouterLink to="#">Туры в Таджикистан</RouterLink>
+                  <RouterLink to="#">Достопримечательности</RouterLink>
+                  <RouterLink to="#">Информация об Таджикистане</RouterLink>
+                  <RouterLink to="#">Виза в Таджикистан</RouterLink>
+                  <RouterLink to="#">Таджикская Кухня</RouterLink>
+                  <RouterLink to="#">Фото Таджикистана</RouterLink>
+                  <RouterLink to="#">Гостиницы Таджикистана</RouterLink>
+                  <RouterLink to="#">Конференц-залы</RouterLink>
+                  <RouterLink to="#">Рестораны</RouterLink>
+                  <RouterLink to="#">Транспортные услуги</RouterLink>
                 </div>
               </div>
             </transition>
@@ -324,16 +324,16 @@ onMounted(() => {
             <transition name="dropdown">
               <div v-if="currentLinksId === 'tm-mob'" class="origin-top">
                 <div class="bg-white flex flex-col gap-[25px] py-[20px] pl-[20px]">
-                  <RouterLink>Туры в Туркменистан</RouterLink>
-                  <RouterLink>Достопримечательности</RouterLink>
-                  <RouterLink>Информация об Туркменистане</RouterLink>
-                  <RouterLink>Виза в Туркменистан</RouterLink>
-                  <RouterLink>Туркменская Кухня</RouterLink>
-                  <RouterLink>Фото Туркменистана</RouterLink>
-                  <RouterLink>Гостиницы Туркменистана</RouterLink>
-                  <RouterLink>Конференц-залы</RouterLink>
-                  <RouterLink>Рестораны</RouterLink>
-                  <RouterLink>Транспортные услуги</RouterLink>
+                  <RouterLink to="#">Туры в Туркменистан</RouterLink>
+                  <RouterLink to="#">Достопримечательности</RouterLink>
+                  <RouterLink to="#">Информация об Туркменистане</RouterLink>
+                  <RouterLink to="#">Виза в Туркменистан</RouterLink>
+                  <RouterLink to="#">Туркменская Кухня</RouterLink>
+                  <RouterLink to="#">Фото Туркменистана</RouterLink>
+                  <RouterLink to="#">Гостиницы Туркменистана</RouterLink>
+                  <RouterLink to="#">Конференц-залы</RouterLink>
+                  <RouterLink to="#">Рестораны</RouterLink>
+                  <RouterLink to="#">Транспортные услуги</RouterLink>
                 </div>
               </div>
             </transition>
@@ -360,16 +360,16 @@ onMounted(() => {
             <transition name="dropdown">
               <div v-if="currentLinksId === 'ch-mob'" class="origin-top">
                 <div class="bg-white flex flex-col gap-[25px] py-[20px] pl-[20px]">
-                  <RouterLink>Туры в Китай</RouterLink>
-                  <RouterLink>Достопримечательности</RouterLink>
-                  <RouterLink>Информация об Китае</RouterLink>
-                  <RouterLink>Виза в Китай</RouterLink>
-                  <RouterLink>Китайская Кухня</RouterLink>
-                  <RouterLink>Фото Китая</RouterLink>
-                  <RouterLink>Гостиницы Китая</RouterLink>
-                  <RouterLink>Конференц-залы</RouterLink>
-                  <RouterLink>Рестораны</RouterLink>
-                  <RouterLink>Транспортные услуги</RouterLink>
+                  <RouterLink to="#">Туры в Китай</RouterLink>
+                  <RouterLink to="#">Достопримечательности</RouterLink>
+                  <RouterLink to="#">Информация об Китае</RouterLink>
+                  <RouterLink to="#">Виза в Китай</RouterLink>
+                  <RouterLink to="#">Китайская Кухня</RouterLink>
+                  <RouterLink to="#">Фото Китая</RouterLink>
+                  <RouterLink to="#">Гостиницы Китая</RouterLink>
+                  <RouterLink to="#">Конференц-залы</RouterLink>
+                  <RouterLink to="#">Рестораны</RouterLink>
+                  <RouterLink to="#">Транспортные услуги</RouterLink>
                 </div>
               </div>
             </transition>
@@ -396,16 +396,16 @@ onMounted(() => {
             <transition name="dropdown">
               <div v-if="currentLinksId === 'aj-mob'" class="origin-top">
                 <div class="bg-white flex flex-col gap-[25px] py-[20px] pl-[20px]">
-                  <RouterLink>Туры в Азербайджан</RouterLink>
-                  <RouterLink>Достопримечательности</RouterLink>
-                  <RouterLink>Информация об Азербайджане</RouterLink>
-                  <RouterLink>Виза в Азербайжан</RouterLink>
-                  <RouterLink>Азербайджанская Кухня</RouterLink>
-                  <RouterLink>Фото Азербайджана</RouterLink>
-                  <RouterLink>Гостиницы Азербайджана</RouterLink>
-                  <RouterLink>Конференц-залы</RouterLink>
-                  <RouterLink>Рестораны</RouterLink>
-                  <RouterLink>Транспортные услуги</RouterLink>
+                  <RouterLink to="#">Туры в Азербайджан</RouterLink>
+                  <RouterLink to="#">Достопримечательности</RouterLink>
+                  <RouterLink to="#">Информация об Азербайджане</RouterLink>
+                  <RouterLink to="#">Виза в Азербайжан</RouterLink>
+                  <RouterLink to="#">Азербайджанская Кухня</RouterLink>
+                  <RouterLink to="#">Фото Азербайджана</RouterLink>
+                  <RouterLink to="#">Гостиницы Азербайджана</RouterLink>
+                  <RouterLink to="#">Конференц-залы</RouterLink>
+                  <RouterLink to="#">Рестораны</RouterLink>
+                  <RouterLink to="#">Транспортные услуги</RouterLink>
                 </div>
               </div>
             </transition>
@@ -419,28 +419,28 @@ onMounted(() => {
           class="py-[30px] px-[15px] bg-[#f9f6ed] main-font text-[15px] font-semibold text-[#444] transition-transform duration-300 ease-in-out"
           v-if="currentMenu === 'type-mob'"
         >
-          <RouterLink class="flex justify-between items-center border-b-1 border-[#eae5db] py-[12px] w-full">
+          <RouterLink to="#" class="flex justify-between items-center border-b-1 border-[#eae5db] py-[12px] w-full">
             <div class="flex gap-[15px] items-center">
               <img src="/icons/exc.png" class="w-[30px]" />
               <div class="uppercase">Экскурсионные туры</div>
             </div>
           </RouterLink>
 
-          <RouterLink class="flex justify-between items-center border-b-1 border-[#eae5db] py-[12px] w-full">
+          <RouterLink to="#" class="flex justify-between items-center border-b-1 border-[#eae5db] py-[12px] w-full">
             <div class="flex gap-[15px] items-center">
               <img src="/icons/theme.png" class="w-[30px]" />
               <div class="uppercase">Тематические туры</div>
             </div>
           </RouterLink>
 
-          <RouterLink class="flex justify-between items-center border-b-1 border-[#eae5db] py-[12px] w-full">
+          <RouterLink to="#" class="flex justify-between items-center border-b-1 border-[#eae5db] py-[12px] w-full">
             <div class="flex gap-[15px] items-center">
               <img src="/icons/holy.png" class="w-[30px]" />
               <div class="uppercase">Праздничные туры</div>
             </div>
           </RouterLink>
 
-          <RouterLink class="flex justify-between items-center border-b-1 border-[#eae5db] py-[12px] w-full">
+          <RouterLink to="#" class="flex justify-between items-center border-b-1 border-[#eae5db] py-[12px] w-full">
             <div class="flex gap-[15px] items-center">
               <img src="/icons/mice.png" class="w-[30px]" />
               <div class="uppercase">m.i.c.e</div>
@@ -471,15 +471,15 @@ onMounted(() => {
             <transition name="dropdown">
               <div v-if="currentLinksId === 'adv-mob'" class="origin-top">
                 <div class="bg-white flex flex-col gap-[25px] py-[20px] pl-[20px]">
-                  <RouterLink>Треккинг</RouterLink>
-                  <RouterLink>Семейный отдых в горах</RouterLink>
-                  <RouterLink>Конные туры</RouterLink>
-                  <RouterLink>Рыболовные туры</RouterLink>
-                  <RouterLink>Паралпнеризм</RouterLink>
-                  <RouterLink>4 WD туры</RouterLink>
-                  <RouterLink>Велотуры</RouterLink>
-                  <RouterLink>Туры на верблюдах</RouterLink>
-                  <RouterLink>Горнолыжные туры</RouterLink>
+                  <RouterLink to="#">Треккинг</RouterLink>
+                  <RouterLink to="#">Семейный отдых в горах</RouterLink>
+                  <RouterLink to="#">Конные туры</RouterLink>
+                  <RouterLink to="#">Рыболовные туры</RouterLink>
+                  <RouterLink to="#">Паралпнеризм</RouterLink>
+                  <RouterLink to="#">4 WD туры</RouterLink>
+                  <RouterLink to="#">Велотуры</RouterLink>
+                  <RouterLink to="#">Туры на верблюдах</RouterLink>
+                  <RouterLink to="#">Горнолыжные туры</RouterLink>
                 </div>
               </div>
             </transition>
@@ -509,16 +509,16 @@ onMounted(() => {
             <transition name="dropdown">
               <div v-if="currentLinksId === 'alp-mob'" class="origin-top">
                 <div class="bg-white flex flex-col gap-[25px] py-[20px] pl-[20px]">
-                  <RouterLink>Пик Ленина</RouterLink>
-                  <RouterLink>Вершины Памира</RouterLink>
-                  <RouterLink>Пик Музтаг-Ата</RouterLink>
-                  <RouterLink>Пик Музтаг-Ата + пик Ленина</RouterLink>
-                  <RouterLink>Пик Хан-Тенгри</RouterLink>
-                  <RouterLink>Пик Хан-Тенгри + пик Ленина</RouterLink>
-                  <RouterLink>Пик Ленина + пик Хан-Тенгри + пик Победы</RouterLink>
-                  <RouterLink>Пик Победы</RouterLink>
-                  <RouterLink>Пик Коммунизма</RouterLink>
-                  <RouterLink>Майская альпиниада в Чимгане</RouterLink>
+                  <RouterLink to="#">Пик Ленина</RouterLink>
+                  <RouterLink to="#">Вершины Памира</RouterLink>
+                  <RouterLink to="#">Пик Музтаг-Ата</RouterLink>
+                  <RouterLink to="#">Пик Музтаг-Ата + пик Ленина</RouterLink>
+                  <RouterLink to="#">Пик Хан-Тенгри</RouterLink>
+                  <RouterLink to="#">Пик Хан-Тенгри + пик Ленина</RouterLink>
+                  <RouterLink to="#">Пик Ленина + пик Хан-Тенгри + пик Победы</RouterLink>
+                  <RouterLink to="#">Пик Победы</RouterLink>
+                  <RouterLink to="#">Пик Коммунизма</RouterLink>
+                  <RouterLink to="#">Майская альпиниада в Чимгане</RouterLink>
                 </div>
               </div>
             </transition>

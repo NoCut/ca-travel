@@ -93,7 +93,7 @@
       </div>
     </div>
 
-    <div class='mt-[46px] grid grid-cols-4 justify-stretch px-[260px]' v-auto-animate  >
+    <div class='mt-[46px] gap-[10px] grid grid-cols-4 justify-stretch px-[260px]' v-auto-animate  >
       <div class="max-w-[328px] mx-auto">
         <div class="relative overflow-hidden">
           <img

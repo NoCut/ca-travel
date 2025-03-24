@@ -256,7 +256,7 @@ onMounted(() => {
         </button>
 
         <RouterLink
-          :to="`/${route.params.lang}/tours`"
+          to="/tours"
           class="flex gap-[12px] hover:text-[#d35400] cursor-pointer items-center transition-colors"
           @click="hideMenu"
         >
