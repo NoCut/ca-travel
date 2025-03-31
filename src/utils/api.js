@@ -16,7 +16,7 @@ api.interceptors.response.use(
           originalRequest._retry = true;
           try {
               await refreshToken();
-              originalRequest.headers.Authorization = `Bearer ${localStorage.getItem("access_token")}`;
+              originalRequest.headers.Authorization = `Bearer ${sessionStorage.getItem("access_token")}`;
               return api(originalRequest);
           } catch (refreshError) {
               console.error("❌ Ошибка при обновлении токена:", refreshError.response?.data || refreshError.message);
@@ -41,7 +41,7 @@ export const auth = async (email, password) => {
           {headers: {"Content-Type": "application/json"}}
       );
       console.log("✅ Ответ сервера:", response.data);
-      localStorage.setItem("access_token", response.data.access_token);
+      sessionStorage.setItem("access_token", response.data.access_token);
       return response.data;
   } catch (error) {
       console.error("❌ Ошибка авторизации:", error.response?.data || error.message);
@@ -53,7 +53,7 @@ export const auth = async (email, password) => {
 export const refreshToken = async () => {
   try {
       const response = await api.post("/refresh");
-      localStorage.setItem("access_token", response.data.access_token);
+      sessionStorage.setItem("access_token", response.data.access_token);
       console.log("🔄 Токен успешно обновлён.");
       return response.data;
   } catch (error) {
@@ -66,7 +66,7 @@ export const refreshToken = async () => {
 export const logout = async () => {
   try {
       await api.post("/logout");
-      localStorage.removeItem("access_token");
+      sessionStorage.removeItem("access_token");
       console.log("🚪 Выход выполнен успешно.");
   } catch (error) {
       console.error("❌ Ошибка при выходе:", error.response?.data || error.message);
@@ -75,7 +75,7 @@ export const logout = async () => {
 
 // 📌 Доступ к защищённому эндпоинту
 export const getProtectedData = async () => {
-  const token = localStorage.getItem("access_token");
+  const token = sessionStorage.getItem("access_token");
   if (!token) throw new Error("No access token found");
 
   return api.get("/protected", {
@@ -85,16 +85,63 @@ export const getProtectedData = async () => {
 
 // 📌 Проверка аутентификации
 export const isAuthenticated = () => {
-  const token = localStorage.getItem("access_token");
+  const token = sessionStorage.getItem("access_token");
   return !!token;
+};
+
+// 📌 Получить список всех пользователей
+export const getAllUsers = async () => {
+  const token = sessionStorage.getItem("access_token");
+
+  return api.get("/users/", {
+    headers: {Authorization: `Bearer ${token}`},
+});
 };
 
 // 📌 Получить список туров
 export const getAllTours = async () => {
-  return api.get("/tours");
+  return api.get("/tours/");
 };
 
 // 📌 Создать новый тур
 export const createTour = async (tourData) => {
   return api.post("/tours", tourData);
+};
+
+export const getTourById = async (id) => {
+  return api.get(`/tours/${id}`);
+}
+
+// 📌 Обновить тур
+export const updateTour = async (id, tourData) => {
+  return api.put(`/tours/${id}`, tourData);
+};
+
+// 📌 Удалить тур
+export const deleteTour = async (id) => {
+  return api.delete(`/tours/${id}`);
+};
+
+// 📌 Получение списка всех заявок по Пику Ленина
+export const getAllApplications = async () => {
+  return api.get("/applications/");
+};
+
+// 📌 Получение заявки по ID
+export const getApplicationById = async (id) => {
+  return api.get(`/applications/${id}`);
+};
+
+// 📌 Создание новой заявки
+export const createApplication = async (applicationData) => {
+  return api.post("/applications/", applicationData, {
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+};
+
+// 📌 Удаление заявки
+export const deleteApplication = async (id) => {
+  return api.delete(`/applications/${id}`);
 };

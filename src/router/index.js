@@ -8,6 +8,7 @@ import CampView from '@/views/CampView.vue'
 import InfoView from '@/views/InfoView.vue'
 import LoginView from '@/views/LoginView.vue'
 import DashboardView from '@/views/DashboardView.vue'
+import RequestView from '@/views/RequestView.vue'
 
 import { isAuthenticated } from '@/utils/api'
 
@@ -53,6 +54,11 @@ const router = createRouter({
       path: '/info',
       name: 'info',
       component: InfoView,
+    },
+    {
+      path: '/application',
+      name: 'application',
+      component: RequestView,
     },
     {
       path: '/login',

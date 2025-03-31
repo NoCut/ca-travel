@@ -1,0 +1,38 @@
+Date : 2025-03-27 17:11:16
+Directory : f:\moi_proecti\ca-travel\src\components
+Total : 11 files,  2338 codes, 1 comments, 254 blanks, all 2593 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Vue      |         11 |      2,338 |          1 |        254 |      2,593 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                    | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                       |         11 |      2,338 |          1 |        254 |      2,593 |
+| . (Files)                                                               |          7 |      1,973 |          0 |        206 |      2,179 |
+| DashboardPanels                                                         |          3 |        117 |          0 |         23 |        140 |
+| forms                                                                   |          1 |        248 |          1 |         25 |        274 |
++-------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                | language | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| f:\moi_proecti\ca-travel\src\components\DashboardPanel.vue              | Vue      |          9 |          0 |          4 |         13 |
+| f:\moi_proecti\ca-travel\src\components\DashboardPanels\PanelItems.vue  | Vue      |         13 |          0 |          2 |         15 |
+| f:\moi_proecti\ca-travel\src\components\DashboardPanels\ToursPanels.vue | Vue      |         94 |          0 |         13 |        107 |
+| f:\moi_proecti\ca-travel\src\components\DashboardPanels\UserPanel.vue   | Vue      |         10 |          0 |          8 |         18 |
+| f:\moi_proecti\ca-travel\src\components\FooterPanel.vue                 | Vue      |        140 |          0 |         31 |        171 |
+| f:\moi_proecti\ca-travel\src\components\HeaderMobile.vue                | Vue      |        580 |          0 |         69 |        649 |
+| f:\moi_proecti\ca-travel\src\components\HeaderPanel.vue                 | Vue      |      1,118 |          0 |         79 |      1,197 |
+| f:\moi_proecti\ca-travel\src\components\HeaderTop.vue                   | Vue      |         23 |          0 |          5 |         28 |
+| f:\moi_proecti\ca-travel\src\components\HeaderTrigger.vue               | Vue      |         39 |          0 |          8 |         47 |
+| f:\moi_proecti\ca-travel\src\components\SecondMenu.vue                  | Vue      |         64 |          0 |         10 |         74 |
+| f:\moi_proecti\ca-travel\src\components\forms\ToursForms.vue            | Vue      |        248 |          1 |         25 |        274 |
+| Total                                                                   |          |      2,338 |          1 |        254 |      2,593 |
++-------------------------------------------------------------------------+----------+------------+------------+------------+------------+

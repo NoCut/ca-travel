@@ -5,22 +5,30 @@ import { createTour } from '@/utils/api'
 const emit = defineEmits(['close'])
 
 const tourData = ref({
-  name: '',
+  name_ru: '',
+  name_en: '',
   countries: '',
   duration: 0,
   dates: '',
-  description: '',
-  meals: '',
+  description_ru: '',
+  description_en: '',
+  meals_ru: '',
+  meals_en: '',
   price: 0,
-  extra_costs: '',
-  accommodation: '',
+  extra_costs_ru: '',
+  extra_costs_en: '',
+  accommodation_ru: '',
+  accommodation_en: '',
   routes: [],
+  category: '',
+  tags: [],
 })
 
 const addRoute = () => {
   tourData.value.routes.push({
     cities: '',
-    description: '',
+    description_ru: '',
+    description_en: '',
     schedules: [],
   })
 }
@@ -28,7 +36,8 @@ const addRoute = () => {
 const addSchedule = (routeIndex) => {
   tourData.value.routes[routeIndex].schedules.push({
     day_number: 1,
-    activities: '',
+    activities_ru: '',
+    activities_en: '',
     image: '',
   })
 }
@@ -63,12 +72,24 @@ const submitTour = async () => {
 
       <div class="w-full flex flex-col gap-[30px] pt-[40px]">
         <div class="flex flex-col gap-[10px] w-[80%]">
-          <label for="name" class="text-[24px] font-light main-font text-[#444]">Название</label>
+          <label for="name" class="text-[24px] font-light main-font text-[#444]">Название на русском</label>
           <input
             class="w-full px-[20px] py-[10px] border-1 border-[#444] rounded-2xl focus:outline-[#c74e1c] transition-all duration-300"
             type="text"
             placeholder="Название"
-            v-model="tourData.name"
+            v-model="tourData.name_ru"
+            id="name"
+            required
+          />
+        </div>
+
+        <div class="flex flex-col gap-[10px] w-[80%]">
+          <label for="name" class="text-[24px] font-light main-font text-[#444]">Название на английском</label>
+          <input
+            class="w-full px-[20px] py-[10px] border-1 border-[#444] rounded-2xl focus:outline-[#c74e1c] transition-all duration-300"
+            type="text"
+            placeholder="Название"
+            v-model="tourData.name_en"
             id="name"
             required
           />
@@ -88,16 +109,73 @@ const submitTour = async () => {
 
         <div class="flex flex-col gap-[10px] w-[80%]">
           <label for="description" class="text-[24px] font-light main-font text-[#444]"
-            >Описание</label
+            >Описание(ру)</label
           >
           <textarea
             class="w-full px-[20px] py-[10px] border-1 border-[#444] rounded-2xl focus:outline-[#c74e1c] transition-all duration-300"
             type="text"
             placeholder="Описание"
-            v-model="tourData.description"
+            v-model="tourData.description_ru"
             id="description"
             required
           />
+        </div>
+
+        <div class="flex flex-col gap-[10px] w-[80%]">
+          <label for="description" class="text-[24px] font-light main-font text-[#444]"
+            >Описание(en)</label
+          >
+          <textarea
+            class="w-full px-[20px] py-[10px] border-1 border-[#444] rounded-2xl focus:outline-[#c74e1c] transition-all duration-300"
+            type="text"
+            placeholder="Описание"
+            v-model="tourData.description_en"
+            id="description"
+            required
+          />
+        </div>
+
+        <div class="flex flex-col gap-[10px] w-[80%]">
+          <label for="cat" class="text-[24px] font-light main-font text-[#444]">Категория тура</label>
+          <select
+            class="w-full px-[20px] py-[10px] border-1 border-[#444] rounded-2xl focus:outline-[#c74e1c] transition-all duration-300"
+            v-model="tourData.category"
+            id="cat"
+            required
+          >
+            <option value="adventure">Приключенческий</option>
+            <option value="excursion">Экскурсионный</option>
+            <option value="theme">Тематический</option>
+            <option value="holiday">Праздничный</option>
+            <option value="mice">M.I.C.E</option>
+            <option value="alpinism">Альпинизм</option>
+          </select>
+        </div>
+
+        <div class="flex flex-col gap-[10px] w-[80%]">
+          <p class="text-[24px] font-light main-font text-[#444]">Теги тура</p>
+
+          <div class="grid grid-cols-2">
+            <div class="flex gap-[20px]">
+              <input type="checkbox" id="tag1" value="tag1" v-model="tourData.tags" />
+              <label for="tag1" class="text-[24px] font-light main-font text-[#444]">tag1</label>
+            </div>
+
+            <div class="flex gap-[20px]">
+              <input type="checkbox" id="tag1" value="tag12" v-model="tourData.tags" />
+              <label for="tag1" class="text-[24px] font-light main-font text-[#444]">tag12</label>
+            </div>
+
+            <div class="flex gap-[20px]">
+              <input type="checkbox" id="tag1" value="tag13" v-model="tourData.tags" />
+              <label for="tag1" class="text-[24px] font-light main-font text-[#444]">tag13</label>
+            </div>
+
+            <div class="flex gap-[20px]">
+              <input type="checkbox" id="tag1" value="tag14" v-model="tourData.tags" />
+              <label for="tag1" class="text-[24px] font-light main-font text-[#444]">tag14</label>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -190,13 +268,27 @@ const submitTour = async () => {
 
           <div class="flex flex-col gap-[10px] w-[80%] pt-[20px]">
             <label for="description" class="text-[24px] font-light main-font text-[#444] pt-[10px]"
-              >Описание</label
+              >Описание(ру)</label
             >
             <textarea
               class="w-full px-[20px] py-[10px] border-1 border-[#444] rounded-2xl focus:outline-[#c74e1c] transition-all duration-300"
               type="text"
               placeholder="Описание"
-              v-model="route.description"
+              v-model="route.description_ru"
+              id="description"
+              required
+            ></textarea>
+          </div>
+
+          <div class="flex flex-col gap-[10px] w-[80%] pt-[20px]">
+            <label for="description" class="text-[24px] font-light main-font text-[#444] pt-[10px]"
+              >Описание(en)</label
+            >
+            <textarea
+              class="w-full px-[20px] py-[10px] border-1 border-[#444] rounded-2xl focus:outline-[#c74e1c] transition-all duration-300"
+              type="text"
+              placeholder="Описание"
+              v-model="route.description_en"
               id="description"
               required
             ></textarea>
@@ -245,13 +337,27 @@ const submitTour = async () => {
 
             <div class="flex flex-col gap-[10px] w-[80%] pt-[20px]">
               <label for="day-desc" class="text-[24px] font-light main-font text-[#444] pt-[10px]"
-                >Описание</label
+                >Описание(ру)</label
               >
               <textarea
                 class="w-full px-[20px] py-[10px] border-1 border-[#444] rounded-2xl focus:outline-[#c74e1c] transition-all duration-300"
                 type="text"
                 placeholder="Описание"
-                v-model="schedule.activities"
+                v-model="schedule.activities_ru"
+                id="day-desc"
+                required
+              ></textarea>
+            </div>
+
+            <div class="flex flex-col gap-[10px] w-[80%] pt-[20px]">
+              <label for="day-desc" class="text-[24px] font-light main-font text-[#444] pt-[10px]"
+                >Описание(en)</label
+              >
+              <textarea
+                class="w-full px-[20px] py-[10px] border-1 border-[#444] rounded-2xl focus:outline-[#c74e1c] transition-all duration-300"
+                type="text"
+                placeholder="Описание"
+                v-model="schedule.activities_en"
                 id="day-desc"
                 required
               ></textarea>

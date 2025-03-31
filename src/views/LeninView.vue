@@ -27,11 +27,11 @@ import HeaderTrigger from '@/components/HeaderTrigger.vue'
         class="pt-[252px] max-tb:pt-[105px] max-mb:pt-[26px] flex justify-between max-tb:items-center max-tb:gap-[103px] max-mb:gap-[28px] max-tb:flex-col pb-[86px] max-mb:pb-[26px] max-sm:pb-[52px]"
       >
         <div class="flex items-center gap-[32px]">
-          <button
+          <RouterLink to="/application"
             class="px-[73px] max-mb:px-[52px] max-sm:px-[40px] py-4 border-2 border-white text-white uppercase font-bold max-sm:font-normal bg-white/20 backdrop-blur-none hover:bg-white hover:text-gray-800 transition rounded main-font text-[18px]"
           >
             Отправить запрос
-          </button>
+          </RouterLink>
 
           <button
             class="max-mb:hidden px-[22px] py-5 border-2 border-white text-white font-bold bg-white/20 backdrop-blur-none hover:bg-white hover:text-gray-800 transition rounded main-font text-[18px]"
@@ -143,13 +143,13 @@ import HeaderTrigger from '@/components/HeaderTrigger.vue'
         <div class="pt-[8px] main-font font-light text-[18px] max-stb:text-[14px]">Почитайте отзывы</div>
       </div>
 
-      <div
-        class="bg-white px-[36px] max-tb:px-[18px] hover:text-[#c74e1c] w-[205px] max-stb:w-[139px] h-[180px] max-stb:h-[137px] flex flex-col justify-center"
+      <RouterLink to="/application"
+        class="px-[36px] max-tb:px-[18px] hover:text-[#c74e1c] hover:bg-white transition-all duration-300 w-[205px] max-stb:w-[139px] h-[180px] max-stb:h-[137px] flex flex-col justify-center"
       >
         <img src="/images/main-page/mail.png" class="mx-auto" />
 
         <div class="pt-[8px] main-font font-light text-[18px]">Отправьте заявку</div>
-      </div>
+      </RouterLink>
     </div>
 
     <div

@@ -16,16 +16,16 @@ const isMobile = ref(window.innerWidth < 1025)
       >
         <img
           src="/images/main-logo.png"
-          class="max-tb:w-[80%] max-tb:justify-self-center max-mb:hidden"
+          class="max-tb:w-[80%] max-tb:justify-self-center max-tb:grid max-mb:hidden"
         />
         <img
           src="/images/mob_logo.png"
-          class="justify-self-center max-mb:w-[290px] max-mb:block hidden"
+          class="justify-self-center max-mb:w-[290px] max-mb:grid hidden"
         />
       </div>
 
       <div
-        class="pt-[160px] max-tb:pt-[100px] max-stb:pt-[132px] max-mb:pt-[43px] pl-[260px] max-lp:pl-[30px] max-tb:justify-self-center max-tb:pl-0"
+        class="pt-[160px] max-tb:pt-[100px] max-stb:pt-[132px] max-mb:pt-[43px] pl-[260px] max-lp:pl-[30px] max-tb:justify-self-center max-tb:grid max-tb:pl-0"
       >
         <button
           class="px-[73px] max-mb:px-[30px] py-2 border-2 border-white text-white uppercase font-bold bg-white/20 backdrop-blur-none hover:bg-white hover:text-gray-800 transition rounded main-font text-[18px]"

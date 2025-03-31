@@ -6,6 +6,8 @@ import { RouterLink, useRoute, useRouter } from 'vue-router'
 
 import { ref, onMounted } from 'vue'
 
+defineProps(['getSystemLang'])
+
 const countryIndex = ref(0)
 
 const route = useRoute()
@@ -218,11 +220,16 @@ const toggleMenu = (event) => {
 
 onMounted(() => {
   const selectedLanguage = sessionStorage.getItem('selectedLanguage')
-  if (selectedLanguage && supportedLanguages.includes(selectedLanguage)) {
-    changeLanguage(selectedLanguage)
+  if (!selectedLanguage && !supportedLanguages.includes(selectedLanguage)) {
+    const systemLang = navigator.language.slice(0, 2)
+    sessionStorage.setItem('selectedLanguage', systemLang)
+  } else {
+    sessionStorage.setItem('selectedLanguage', selectedLanguage)
   }
 
+
   document.querySelector(`#${selectedLanguage}`).classList.add('text-[#c74e1c]')
+  changeLanguage(selectedLanguage)
 })
 </script>
 

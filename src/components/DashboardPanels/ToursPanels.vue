@@ -1,12 +1,13 @@
 <script setup>
 import { onMounted, ref } from 'vue'
-import { getAllTours } from '@/utils/api'
+import { getAllTours, deleteTour } from '@/utils/api'
 
 import PanelItems from './PanelItems.vue'
 import ToursForms from '../forms/ToursForms.vue'
 
 const tours = ref('')
 const typePanel = ref('list')
+const curItem = ref({})
 
 const handlerAddPanel = () => {
   typePanel.value = 'add'
@@ -14,6 +15,18 @@ const handlerAddPanel = () => {
 
 const handlerListPanel = () => {
   typePanel.value = 'list'
+}
+
+const handlerEditPanel = (item) => {
+  typePanel.value = 'edit'
+  curItem.value = item
+  console.log(curItem.value)
+}
+
+const handlerDelTour = async (item) => {
+  await deleteTour(item.id)
+  tours.value = (await getAllTours()).data
+  console.log(tours.value)
 }
 
 onMounted(async () => {
@@ -77,7 +90,7 @@ onMounted(async () => {
           </tr>
         </thead>
         <tbody>
-          <PanelItems v-for="tour in tours" :key="tour.id" :item="tour" />
+          <PanelItems v-for="tour in tours" :key="tour.id" :item="tour" editButton="Изменить" @editItem="handlerEditPanel" @deleteItem="handlerDelTour" />
         </tbody>
       </table>
     </div>

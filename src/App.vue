@@ -26,8 +26,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <HeaderPanel class="hidden tb:block" v-if="userWidth > 1025"/>
+  <HeaderPanel class="hidden tb:block" v-if="userWidth > 1025" :getSystemLang="getSystemLang"/>
   <HeaderMobile class="block tb:hidden" v-else />
+
   <SecondMenu />
 
   <RouterView />

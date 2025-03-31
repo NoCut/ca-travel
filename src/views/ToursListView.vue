@@ -1,5 +1,15 @@
 <script setup>
   import HeaderTrigger from '@/components/HeaderTrigger.vue';
+
+  import { getAllTours } from '@/utils/api';
+  import { ref, onMounted } from 'vue';
+
+  const tours = ref([])
+
+  onMounted(async () => {
+    tours.value = (await getAllTours()).data
+    console.log(tours.value)
+  })
 </script>
 
 <template>
@@ -85,7 +95,7 @@
 
     <div class="mt-[30px] px-[260px] font-main flex items-center gap-8">
       <div class="text-[#444] font-bold text-[18px]">
-        Всего найдено туров: 100000
+        Всего найдено туров: {{ tours.length }}
       </div>
 
       <div class="text-[#888] text-[17px]">
@@ -94,7 +104,7 @@
     </div>
 
     <div class='mt-[46px] gap-[10px] grid grid-cols-4 justify-stretch px-[260px]' v-auto-animate  >
-      <div class="max-w-[328px] mx-auto">
+      <div class="max-w-[328px] mx-auto" v-for="tour in tours" :key="tour.id">
         <div class="relative overflow-hidden">
           <img
             src="/images/main-page/classic_uzbekistan.jpg"
@@ -108,118 +118,18 @@
           <div
             class="absolute bottom-1 left-[50%] translate-x-[-50%] text-white text-[16px] letter-spacing-[.1em] main-font"
           >
-            8 дней: <span class="font-semibold">695 USD</span>
+            8 дней: <span class="font-semibold">{{ tour.price }}</span>
           </div>
         </div>
         <div class="pt-[20px] bg-white border-1 border-[#c7c7c7] text-center pb-[18px]">
           <div class="flex justify-center gap-1">
             <span class="text-[#d35400] text-[12px] letter-spacing-[.25em] main-font"
-              >#ЭКСКУРСИОННЫЙ</span
+              >{{tour.tags.join(' #') }}</span
             >
           </div>
 
           <div class="pt-5 text-[#444] text-[20px] main-font letter-spacing-[0.05em]">
-            КЛАССИЧЕСКИЙ<br />
-            УЗБЕКИСТАН
-          </div>
-
-          <div class="pt-7 text-[#888] text-[16px] main-font">Экскурсионный тур в Узбекистан</div>
-        </div>
-      </div>
-
-      <div class="max-w-[328px] mx-auto">
-        <div class="relative overflow-hidden">
-          <img
-            src="/images/main-page/classic_uzbekistan.jpg"
-            class="h-[337px] object-cover object-left"
-          />
-
-          <div class="absolute top-1 right-1 bg-[#e9a83a] rounded-2xl p-[6px] pb-[11px]">
-            <img src="/images/main-page/small-group.png" />
-          </div>
-
-          <div
-            class="absolute bottom-1 left-[50%] translate-x-[-50%] text-white text-[16px] letter-spacing-[.1em] main-font"
-          >
-            8 дней: <span class="font-semibold">695 USD</span>
-          </div>
-        </div>
-        <div class="pt-[20px] bg-white border-1 border-[#c7c7c7] text-center pb-[18px]">
-          <div class="flex justify-center gap-1">
-            <span class="text-[#d35400] text-[12px] letter-spacing-[.25em] main-font"
-              >#ЭКСКУРСИОННЫЙ</span
-            >
-          </div>
-
-          <div class="pt-5 text-[#444] text-[20px] main-font letter-spacing-[0.05em]">
-            КЛАССИЧЕСКИЙ<br />
-            УЗБЕКИСТАН
-          </div>
-
-          <div class="pt-7 text-[#888] text-[16px] main-font">Экскурсионный тур в Узбекистан</div>
-        </div>
-      </div>
-
-      <div class="max-w-[328px] mx-auto">
-        <div class="relative overflow-hidden">
-          <img
-            src="/images/main-page/classic_uzbekistan.jpg"
-            class="h-[337px] object-cover object-left"
-          />
-
-          <div class="absolute top-1 right-1 bg-[#e9a83a] rounded-2xl p-[6px] pb-[11px]">
-            <img src="/images/main-page/small-group.png" />
-          </div>
-
-          <div
-            class="absolute bottom-1 left-[50%] translate-x-[-50%] text-white text-[16px] letter-spacing-[.1em] main-font"
-          >
-            8 дней: <span class="font-semibold">695 USD</span>
-          </div>
-        </div>
-        <div class="pt-[20px] bg-white border-1 border-[#c7c7c7] text-center pb-[18px]">
-          <div class="flex justify-center gap-1">
-            <span class="text-[#d35400] text-[12px] letter-spacing-[.25em] main-font"
-              >#ЭКСКУРСИОННЫЙ</span
-            >
-          </div>
-
-          <div class="pt-5 text-[#444] text-[20px] main-font letter-spacing-[0.05em]">
-            КЛАССИЧЕСКИЙ<br />
-            УЗБЕКИСТАН
-          </div>
-
-          <div class="pt-7 text-[#888] text-[16px] main-font">Экскурсионный тур в Узбекистан</div>
-        </div>
-      </div>
-
-      <div class="max-w-[328px] mx-auto">
-        <div class="relative overflow-hidden">
-          <img
-            src="/images/main-page/classic_uzbekistan.jpg"
-            class="h-[337px] object-cover object-left"
-          />
-
-          <div class="absolute top-1 right-1 bg-[#e9a83a] rounded-2xl p-[6px] pb-[11px]">
-            <img src="/images/main-page/small-group.png" />
-          </div>
-
-          <div
-            class="absolute bottom-1 left-[50%] translate-x-[-50%] text-white text-[16px] letter-spacing-[.1em] main-font"
-          >
-            8 дней: <span class="font-semibold">695 USD</span>
-          </div>
-        </div>
-        <div class="pt-[20px] bg-white border-1 border-[#c7c7c7] text-center pb-[18px]">
-          <div class="flex justify-center gap-1">
-            <span class="text-[#d35400] text-[12px] letter-spacing-[.25em] main-font"
-              >#ЭКСКУРСИОННЫЙ</span
-            >
-          </div>
-
-          <div class="pt-5 text-[#444] text-[20px] main-font letter-spacing-[0.05em]">
-            КЛАССИЧЕСКИЙ<br />
-            УЗБЕКИСТАН
+            {{ currLang === 'ru' ? tour.name_ru : tour.name_en }}
           </div>
 
           <div class="pt-7 text-[#888] text-[16px] main-font">Экскурсионный тур в Узбекистан</div>
