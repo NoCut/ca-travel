@@ -5,10 +5,12 @@
   import { ref, onMounted } from 'vue';
 
   const tours = ref([])
+  const currLang = ''
 
   onMounted(async () => {
     tours.value = (await getAllTours()).data
     console.log(tours.value)
+    currLang.value = localStorage.getItem('lang') || 'ru'
   })
 </script>
 
