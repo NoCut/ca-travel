@@ -478,9 +478,9 @@ onMounted(async () => {
   }
 })
 
-watch(sessionStorage('selectedLanguage'), (newLang) => {
-  currLang.value = newLang
-})
+// watch(sessionStorage.getItem('selectedLanguage'), (newLang) => {
+//   currLang.value = newLang
+// })
 </script>
 
 <style>
