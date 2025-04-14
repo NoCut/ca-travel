@@ -36,7 +36,7 @@ export const auth = async (email, password) => {
   console.log("📨 Отправляем запрос на сервер:", {email, password});
   console.log(api)
   try {
-      const response = await api.post("/login",
+      const response = await api.post("/login_me",
           {email, password},
           {headers: {"Content-Type": "application/json"}}
       );
@@ -131,6 +131,10 @@ export const getAllApplications = async () => {
 export const getApplicationById = async (id) => {
   return api.get(`/applications/${id}`);
 };
+
+export const getTourInfo = async (id) => {
+  return api.get(`/tours/${id}`)
+}
 
 // 📌 Создание новой заявки
 export const createApplication = async (applicationData) => {

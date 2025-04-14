@@ -9,6 +9,7 @@ import InfoView from '@/views/InfoView.vue'
 import LoginView from '@/views/LoginView.vue'
 import DashboardView from '@/views/DashboardView.vue'
 import RequestView from '@/views/RequestView.vue'
+import TourView from '@/views/TourView.vue'
 
 import { isAuthenticated } from '@/utils/api'
 
@@ -39,6 +40,12 @@ const router = createRouter({
       path: '/tours',
       name: 'tours',
       component: ToursListView,
+    },
+    {
+      path: '/tours/:id',
+      name: 'tour',
+      component: TourView,
+      props: true,
     },
     {
       path: '/recom',

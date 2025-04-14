@@ -1,5 +1,6 @@
 <script setup>
   import HeaderTrigger from '@/components/HeaderTrigger.vue';
+  import { RouterLink } from 'vue-router';
 
   import { getAllTours } from '@/utils/api';
   import { ref, onMounted } from 'vue';
@@ -37,12 +38,12 @@
       </div>
     </div>
 
-    <div class="px-[260px] pt-[29px] pb-[93px]">
+    <router-link to="/lenin" class="px-[260px] pt-[29px] pb-[93px]">
       <div class="flex gap-[12px]">
         <img src="/images/clearsnow/arrow.svg" class="w-[15px]" />
         <div class="main-font text-[15px] text-[#888]"> (ПРЕДЫДУЩАЯ СТРАНИЦА)</div>
       </div>
-    </div>
+    </router-link>
 
     <div class="flex gap-[2px] items-center px-[260px] justify-between">
       <div class="bg-[#f9f6ed] flex items-center justify-center w-[25%] py-[18px] gap-[21px]">
@@ -106,7 +107,7 @@
     </div>
 
     <div class='mt-[46px] gap-[10px] grid grid-cols-4 justify-stretch px-[260px]' v-auto-animate  >
-      <div class="max-w-[328px] mx-auto" v-for="tour in tours" :key="tour.id">
+      <router-link class="max-w-[328px] mx-auto cursor-pointer" v-for="tour in tours" :key="tour.id" :to="'/tours/' + tour.id">
         <div class="relative overflow-hidden">
           <img
             src="/images/main-page/classic_uzbekistan.jpg"
@@ -136,7 +137,7 @@
 
           <div class="pt-7 text-[#888] text-[16px] main-font">Экскурсионный тур в Узбекистан</div>
         </div>
-      </div>
+      </router-link>
     </div>
 
     <div class="mt-[72px] mb-[93px] flex justify-center">
