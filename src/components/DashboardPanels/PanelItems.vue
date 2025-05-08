@@ -3,7 +3,6 @@ defineProps(['item', 'editButton'])
 
 const emit = defineEmits(['deleteItem', 'editItem'])
 
-
 </script>
 
 <template>

@@ -10,6 +10,11 @@ const isMobile = ref(window.innerWidth < 1025)
 <template>
   <main class="relative">
     <HeaderTrigger />
+
+    <div class="fixed right-[-21px] top-[50%] bg-[#c54d1b] z-10 rounded-t-xl -rotate-90 px-[15px] py-[10px] text-white main-font hover:bg-[#d35400] cursor-pointer transition-all duration-300">
+      Отзывы
+    </div>
+
     <div class="hero-bg bg-right max-stb:bg-bottom">
       <div
         class="pt-[220px] max-tb:pt-[380px] max-stb:pt-[142px] pl-[260px] max-lp:pl-[30px] max-tb:pl-0"
@@ -28,7 +33,7 @@ const isMobile = ref(window.innerWidth < 1025)
         class="pt-[160px] max-tb:pt-[100px] max-stb:pt-[132px] max-mb:pt-[43px] pl-[260px] max-lp:pl-[30px] max-tb:justify-self-center max-tb:grid max-tb:pl-0"
       >
         <button
-          class="px-[73px] max-mb:px-[30px] py-2 border-2 border-white text-white uppercase font-bold bg-white/20 backdrop-blur-none hover:bg-white hover:text-gray-800 transition rounded main-font text-[18px]"
+          class="px-[73px] cursor-pointer max-mb:px-[30px] py-2 border-2 border-white text-white uppercase font-bold bg-white/20 backdrop-blur-none hover:bg-white hover:text-gray-800 transition-all rounded main-font text-[18px]"
         >
           Отправить запрос
         </button>
@@ -69,11 +74,11 @@ const isMobile = ref(window.innerWidth < 1025)
           </div>
         </div>
 
-        <div
-          class="w-[146px] max-mb:w-[70px] h-[81px] max-mb:h-[55px] flex bg-[#c54d1b] items-center justify-center"
+        <button
+          class="cursor-pointer w-[146px] max-mb:w-[70px] h-[81px] max-mb:h-[55px] flex bg-[#c54d1b] hover:bg-[#cb805f] translate-all duration-300 items-center justify-center"
         >
           <img src="/icons/right.png" />
-        </div>
+        </button>
       </div>
     </div>
 
@@ -412,7 +417,7 @@ const isMobile = ref(window.innerWidth < 1025)
       class="flex justify-center items-center gap-[35px] max-lp:gap-[16px] bg-[#f9f6ed] py-[10px] text-[#444] main-font text-[18px] max-mb:text-[14px] text-center max-mb:flex-wrap"
     >
       <div
-        class="bg-white px-[36px] max-tb:px-[5px] hover:text-[#c74e1c] w-[205px] max-tb:w-[160px] max-mb:w-[137px] h-[180px] max-mb:h-[137px] flex flex-col justify-center"
+        class="hover:bg-white cursor-pointer transition-all duration-300 px-[36px] max-tb:px-[5px] hover:text-[#c74e1c] w-[205px] max-tb:w-[160px] max-mb:w-[137px] h-[180px] max-mb:h-[137px] flex flex-col justify-center"
       >
         <div class="max-mb:h-[56px] flex items-center">
           <img src="/images/main-page/lupa.png" class="mx-auto max-mb:max-w-[55px]" />
@@ -421,7 +426,7 @@ const isMobile = ref(window.innerWidth < 1025)
       </div>
 
       <div
-        class="px-[36px] max-tb:px-[5px] w-[225px] max-tb:w-[160px] max-mb:w-[137px] h-[180px] max-mb:h-[137px] flex flex-col justify-center"
+        class="hover:bg-white cursor-pointer transition-all duration-300 hover:text-[#c74e1c] px-[36px] max-tb:px-[5px] w-[225px] max-tb:w-[160px] max-mb:w-[137px] h-[180px] max-mb:h-[137px] flex flex-col justify-center"
       >
         <div class="max-mb:h-[56px] flex items-center">
           <img src="/images/main-page/calendar2.png" class="mx-auto max-mb:max-w-[55px]" />
@@ -431,7 +436,7 @@ const isMobile = ref(window.innerWidth < 1025)
       </div>
 
       <div
-        class="px-[36px] max-tb:px-[5px] w-[205px] max-tb:w-[160px] max-mb:w-[137px] h-[180px] max-mb:h-[137px] flex flex-col justify-center"
+        class="hover:bg-white cursor-pointer transition-all duration-300 hover:text-[#c74e1c] px-[36px] max-tb:px-[5px] w-[205px] max-tb:w-[160px] max-mb:w-[137px] h-[180px] max-mb:h-[137px] flex flex-col justify-center"
       >
         <div class="max-mb:h-[56px] flex items-center">
           <img src="/images/main-page/review.png" class="mx-auto max-mb:max-w-[55px]" />
@@ -441,7 +446,7 @@ const isMobile = ref(window.innerWidth < 1025)
       </div>
 
       <div
-        class="px-[36px] max-tb:px-[5px] w-[205px] max-tb:w-[160px] max-mb:w-[137px] h-[180px] max-mb:h-[137px] flex flex-col justify-center"
+        class="hover:bg-white cursor-pointer transition-all duration-300 hover:text-[#c74e1c] px-[36px] max-tb:px-[5px] w-[205px] max-tb:w-[160px] max-mb:w-[137px] h-[180px] max-mb:h-[137px] flex flex-col justify-center"
       >
         <div class="max-mb:h-[56px] flex items-center">
           <img src="/images/main-page/mail.png" class="mx-auto max-mb:max-w-[55px]" />
@@ -456,48 +461,48 @@ const isMobile = ref(window.innerWidth < 1025)
     </div>
 
     <div class="w-full grid grid-cols-3 max-tb:grid-cols-2 max-mb:grid-cols-1 pt-[26px]">
-      <div class="relative">
-        <img class="object-cover w-full" src="/images/main-page/Uzbekistan.jpg" />
+      <div class="relative group overflow-hidden">
+        <img class="object-cover w-full group-hover:scale-[1.2] transition-all duration-300" src="/images/main-page/Uzbekistan.jpg" />
         <div
           class="absolute bottom-1 left-[50%] translate-x-[-50%] text-white main-font text-[40px] font-light"
         >
           Узбекистан
         </div>
       </div>
-      <div class="relative">
-        <img class="object-cover w-full" src="/images/main-page/Kyrgyzstan.jpg" />
+      <div class="relative group overflow-hidden">
+        <img class="object-cover w-full group-hover:scale-[1.2] transition-all duration-300" src="/images/main-page/Kyrgyzstan.jpg" />
         <div
           class="absolute bottom-1 left-[50%] translate-x-[-50%] text-white main-font text-[40px] font-light"
         >
           Кыргызстан
         </div>
       </div>
-      <div class="relative">
-        <img class="object-cover w-full" src="/images/main-page/Kazakhstan.jpg" />
+      <div class="relative group overflow-hidden">
+        <img class="object-cover w-full group-hover:scale-[1.2] transition-all duration-300" src="/images/main-page/Kazakhstan.jpg" />
         <div
           class="absolute bottom-1 left-[50%] translate-x-[-50%] text-white main-font text-[40px] font-light"
         >
           Казахстан
         </div>
       </div>
-      <div class="relative">
-        <img class="object-cover w-full" src="/images/main-page/Tajikistan.jpg" />
+      <div class="relative group overflow-hidden">
+        <img class="object-cover w-full group-hover:scale-[1.2] transition-all duration-300" src="/images/main-page/Tajikistan.jpg" />
         <div
           class="absolute bottom-1 left-[50%] translate-x-[-50%] text-white main-font text-[40px] font-light"
         >
           Таджикстан
         </div>
       </div>
-      <div class="relative">
-        <img class="object-cover w-full" src="/images/main-page/Turkmenistan.jpg" />
+      <div class="relative group overflow-hidden">
+        <img class="object-cover w-full group-hover:scale-[1.2] transition-all duration-300" src="/images/main-page/Turkmenistan.jpg" />
         <div
           class="absolute bottom-1 left-[50%] translate-x-[-50%] text-white main-font text-[40px] font-light"
         >
           Туркменистан
         </div>
       </div>
-      <div class="relative">
-        <img class="object-cover w-full" src="/images/main-page/China.jpg" />
+      <div class="relative group overflow-hidden">
+        <img class="object-cover w-full group-hover:scale-[1.2] transition-all duration-300" src="/images/main-page/China.jpg" />
         <div
           class="absolute bottom-1 left-[50%] translate-x-[-50%] text-white main-font text-[40px] font-light"
         >

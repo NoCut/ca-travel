@@ -20,6 +20,9 @@ export default defineConfig({
     },
   },
   server: {
-    historyApiFallback: true // Фикс прямых ссылок
+    historyApiFallback: true,
+    host: true,
+    port: 5173,
+    strictPort: true // Фикс прямых ссылок
   }
 })

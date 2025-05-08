@@ -27,17 +27,17 @@ api.interceptors.response.use(
   }
 );
 
-export const register = async (email, password) => {
-  return api.post("/register", {email, password}, {headers: {"Content-Type": "application/json"}});
+export const register = async (username, password) => {
+  return api.post("/register", {username, password}, {headers: {"Content-Type": "application/json"}});
 };
 
 // 📌 Логин
-export const auth = async (email, password) => {
-  console.log("📨 Отправляем запрос на сервер:", {email, password});
+export const auth = async (username, password) => {
+  console.log("📨 Отправляем запрос на сервер:", {username, password});
   console.log(api)
   try {
-      const response = await api.post("/login_me",
-          {email, password},
+      const response = await api.post("/login",
+          {username, password},
           {headers: {"Content-Type": "application/json"}}
       );
       console.log("✅ Ответ сервера:", response.data);
@@ -105,7 +105,7 @@ export const getAllTours = async () => {
 
 // 📌 Создать новый тур
 export const createTour = async (tourData) => {
-  return api.post("/tours", tourData);
+  return api.post("/tours/", tourData);
 };
 
 export const getTourById = async (id) => {
@@ -120,6 +120,10 @@ export const updateTour = async (id, tourData) => {
 // 📌 Удалить тур
 export const deleteTour = async (id) => {
   return api.delete(`/tours/${id}`);
+};
+
+export const updateTourInfo = async (id, tourData) => {
+  return api.put(`/tours/${id}`, tourData);
 };
 
 // 📌 Получение списка всех заявок по Пику Ленина

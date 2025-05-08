@@ -1,38 +1,45 @@
 <script setup>
-import { onMounted, ref } from 'vue'
-import { getAllTours, deleteTour } from '@/utils/api'
+import { onMounted, ref } from 'vue';
+import { getAllTours, deleteTour } from '@/utils/api';
 
-import PanelItems from './PanelItems.vue'
-import ToursForms from '../forms/ToursForms.vue'
+import PanelItems from './PanelItems.vue';
+import ToursForms from '../forms/ToursForms.vue';
+import UpdateTourForm from '../forms/UpdateTourForm.vue'; // Assuming UpdateTourForm is EditTourPanel.vue
 
-const tours = ref('')
-const typePanel = ref('list')
-const curItem = ref({})
+const tours = ref([]);
+const typePanel = ref('list');
+const curItem = ref({});
 
 const handlerAddPanel = () => {
-  typePanel.value = 'add'
-}
+  typePanel.value = 'add';
+};
 
-const handlerListPanel = () => {
-  typePanel.value = 'list'
-}
+const handlerListPanel = async () => {
+  typePanel.value = 'list';
+  tours.value = (await getAllTours()).data; // Refresh the list when returning to it
+};
 
 const handlerEditPanel = (item) => {
-  typePanel.value = 'edit'
-  curItem.value = item
-  console.log(curItem.value)
-}
+  typePanel.value = 'edit';
+  curItem.value = item;
+  console.log('Editing tour with ID:', curItem.value.id);
+};
 
 const handlerDelTour = async (item) => {
-  await deleteTour(item.id)
-  tours.value = (await getAllTours()).data
-  console.log(tours.value)
-}
+  await deleteTour(item.id);
+  tours.value = (await getAllTours()).data;
+  console.log('Updated tours after deletion:', tours.value);
+};
+
+const handleUpdateSuccess = async () => {
+  tours.value = (await getAllTours()).data; // Refresh the list after a successful update
+  console.log('Updated tours after edit:', tours.value);
+};
 
 onMounted(async () => {
-  tours.value = (await getAllTours()).data
-  console.log(tours.value)
-})
+  tours.value = (await getAllTours()).data;
+  console.log('Initial tours:', tours.value);
+});
 </script>
 
 <template>
@@ -90,7 +97,14 @@ onMounted(async () => {
           </tr>
         </thead>
         <tbody>
-          <PanelItems v-for="tour in tours" :key="tour.id" :item="tour" editButton="Изменить" @editItem="handlerEditPanel" @deleteItem="handlerDelTour" />
+          <PanelItems
+            v-for="tour in tours"
+            :key="tour.id"
+            :item="tour"
+            editButton="Изменить"
+            @editItem="handlerEditPanel"
+            @deleteItem="handlerDelTour"
+          />
         </tbody>
       </table>
     </div>
@@ -115,5 +129,30 @@ onMounted(async () => {
     </div>
 
     <ToursForms @close="handlerListPanel" />
+  </div>
+
+  <div class="h-full overflow-hidden" v-if="typePanel === 'edit'">
+    <div class="flex items-center w-full">
+      <button
+        class="gap-[10px] flex items-center cursor-pointer transition-all hover:-translate-x-1"
+        @click="handlerListPanel"
+      >
+        <img src="/svg/arrow-2.svg" class="text-[#c74e1c] rotate-180 cursor-pointer w-[20px] h-[20px]" />
+
+        <div class="text-[#c74e1c] main-font text-[20px]">
+          Назад
+        </div>
+      </button>
+
+      <div class="w-full">
+        <h1 class="text-[42px] main-font text-black text-center">Редактирование тура</h1>
+      </div>
+    </div>
+
+    <UpdateTourForm
+      :tour-id="curItem.id"
+      @close="handlerListPanel"
+      @update-success="handleUpdateSuccess"
+    />
   </div>
 </template>
